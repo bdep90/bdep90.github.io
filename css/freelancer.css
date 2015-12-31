@@ -95,6 +95,12 @@ header img {
     margin: 0 auto 20px;
 }
 
+/* profile picture */
+header .img-responsive {
+    max-width: 50%;
+    border-radius: 50%;
+}
+
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
