@@ -8,6 +8,11 @@ body {
     overflow-x: hidden;
 }
 
+/* navigation bar */
+.navbar-default {
+    background-color: rgb(55, 10, 150);
+}
+
 p {
     font-size: 20px;
 }
@@ -34,6 +39,11 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+}
+
+/* h2 */
+h2 {
+    color: rgb(55, 10, 150);
 }
 
 hr.star-light,
@@ -359,7 +369,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: rgb(55, 10, 150);
 }
 
 .btn-social {
