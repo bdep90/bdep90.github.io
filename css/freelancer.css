@@ -38,12 +38,7 @@ h5,
 h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}
-
-/* h2 */
-h2 {
-    color: rgb(55, 10, 150);
+    font-weight: 500;
 }
 
 hr.star-light,
@@ -87,6 +82,8 @@ hr.star-primary:after {
 
 .img-centered {
     margin: 0 auto;
+    height: 80%;
+    width: 80%;
 }
 
 header {
@@ -105,23 +102,17 @@ header img {
     margin: 0 auto 20px;
 }
 
-/* profile picture */
-header .img-responsive {
-    max-width: 50%;
-    border-radius: 50%;
-}
-
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 header .intro-text .skills {
     font-size: 1.25em;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 @media(min-width:768px) {
@@ -141,7 +132,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 10px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -155,7 +146,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        padding: 8px 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -166,7 +157,8 @@ header .intro-text .skills {
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 10px;
 }
 
 .navbar a:focus {
@@ -192,7 +184,11 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
+    color: rgb(55, 10, 150);
+    /*color: rgb(160, 10, 150);*/
+    padding-bottom: 10px;
+    font-weight: 800;
 }
 
 section.success {
@@ -219,9 +215,16 @@ section.success a.active {
     }
 }
 
+/* portfolio section */
+#portfolio {
+    margin-top: 30px;
+    background: url(/img/white-texture.jpg);
+    background-size: cover;
+}
+
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0 15px;
+    margin-bottom: 20px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -236,7 +239,8 @@ section.success a.active {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: #1a242f;
+    /*background: rgba(24,188,156,.9);*/
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -253,7 +257,7 @@ section.success a.active {
     height: 20px;
     margin-top: -12px;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     color: #fff;
 }
 
@@ -266,13 +270,31 @@ section.success a.active {
     margin: 0;
 }
 
+#portfolio .portfolio-item .portfolio-link .caption .caption-content-text {
+    background-color: #1a245f;
+    font-size: .5em;
+    padding: 10px;
+    margin-top: 11%;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-text {
+    color: rgb(24,188,156);
+    font-size: 18px;
+    text-decoration: none;
+    padding-bottom: 8px;
+}
+
+#portfolio img {
+    border: 2px solid #1a242f;
+}
+
 #portfolio * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px;
+        margin-bottom: 35px;
     }
 }
 
@@ -281,7 +303,7 @@ section.success a.active {
     border: solid 2px #fff;
     font-size: 20px;
     color: #fff;
-    background: 0 0;
+    background: lightgrey;
     transition: all .3s ease-in-out;
 }
 
@@ -294,11 +316,51 @@ section.success a.active {
     background: #fff;
 }
 
+/* about me section */
+#about {
+    background: url(/img/yarn-texture.jpg);
+    background-size: cover;
+}
+
+/*#about a {
+    background-color: rgba(200, 200, 200, 0.7);
+}*/
+
+#profile-pic {
+    max-height: 60%;
+    max-width: 30%;
+    float: left;
+    margin-right: 20px;
+}
+
+#profile-text {
+    max-height: 60%;
+    max-width: 65%;
+    float: right;
+    font: darkgrey;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 26px;
+}
+
+/* contact me section */
+#contact {
+    background: url(/img/white-texture.jpg);
+    background-size: cover;
+}
+
+#contact .form-control {
+    font-size: 16px;
+}
+
+input {
+  color: purple;
+}
+
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid darkgrey;
 }
 
 .floating-label-form-group input,
@@ -410,12 +472,26 @@ footer .footer-below {
     outline: 0;
 }
 
+/*  portfolio modals */
+#portfolio-modals {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+#portfolio-modals .col-lg-offset-2 {
+    margin: 0 10%;
+}
+
+#portfolio-modals .col-lg-8 {
+    /*width: 80%;*/
+}
+
 .portfolio-modal .modal-content {
-    padding: 100px 0;
+    padding: 50px 0;
     min-height: 100%;
+    max-width: 80%;
     border: 0;
     border-radius: 0;
-    text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -423,15 +499,19 @@ footer .footer-below {
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
+    color: rgb(55, 10, 150);
+    /*color: rgb(160, 10, 150);*/
+    font-weight: 800;
 }
 
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    border: 4px solid #1a242f;
 }
 
 .portfolio-modal .modal-content .item-details {
-    margin: 30px 0;
+    margin: 0px 0px 15px 0px;
 }
 
 .portfolio-modal .close-modal {
@@ -451,7 +531,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
-    height: 75px;
+    height: 50px;
     margin-left: 35px;
     background-color: #332C50;
     -webkit-transform: rotate(45deg);
@@ -462,7 +542,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
-    height: 75px;
+    height: 50px;
     background-color: #332C50;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -473,3 +553,25 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.portfolio-modal .modal-bottom {
+    max-width: 80%;
+}
+
+.portfolio-modal .modal-text {
+    text-align: left;
+}
+
+
+/* send message button */
+/*#send-btn {
+
+}*/
+
+/* page-top button */
+.btn-primary {
+    background-color: rgb(55, 10, 150);
+    border-color: rgb(55, 10, 150);
+}
+
+rgb(26, 36, 47)
