@@ -1,0 +1,84 @@
+/*-----------------*/
+/* Default Styling */
+/*-----------------*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .1em;
+  color: rgb(99,52,227);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 2px;
+}
+
+img {
+  border: 3px solid rgb(55, 19, 150);
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+}
+
+button.pure-button, a.pure-button {
+  background-color: rgb(55, 19, 150);
+  color: rgb(170, 170, 170);
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+button.button-xsmall {
+  font-size: 65%;
+}
+
+button.button-small {
+  font-size: 70%;
+}
+
+.padded {
+  padding: .5em;
+}
+
+.flexed {
+  display: inline-flex;
+}
+
+.centered {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.card {
+  margin: 1em;
+  background-color: rgba(146, 146, 146, 0.74902);
+  border-radius: 5px;
+}
+
+.placeholder-img {
+  height: 200px;
+  width: 200px;
+  background-image: url(http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png);
+  background-size: cover;
+}
+
+#home, #portfolio, #about, #project.blurb {
+  /*display: none;*/
+}
+
+.caption {
+  background-color: rgba(55, 19, 150, 0.8);
+  color: rgb(160, 160, 160);
+  border-radius: 5px;
+  letter-spacing: .05em;
+}
