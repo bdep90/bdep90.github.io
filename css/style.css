@@ -1,14 +1,28 @@
 /*-----------------*/
-/* Default Styling */
+/* Utility w/ Pure */
 /*-----------------*/
 
-body {
+html, body,
+.pure-g [class *= "pure-u"] {
   font-family: 'Lato', sans-serif;
-  letter-spacing: .1em;
+  letter-spacing: .08em;
   color: rgb(99,52,227);
 }
 
-h1, h2, h3, h4 {
+/*-----------------*/
+/* Default Styling */
+/*-----------------*/
+
+html, body {
+  height:100%;
+  min-height:100%;
+}
+
+body {
+  background-color: rgba(240, 248, 255, 0.45); /*out later*/
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Advent Pro', sans-serif;
   text-transform: uppercase;
 }
@@ -72,13 +86,114 @@ button.button-small {
   background-size: cover;
 }
 
-#home, #portfolio, #about, #project.blurb {
-  /*display: none;*/
+#content {
+  margin-bottom: 5em;
 }
 
-.caption {
-  background-color: rgba(55, 19, 150, 0.8);
-  color: rgb(160, 160, 160);
+#home, #portfolio, #about, #projects, #resume {
+  display: none;
+}
+
+nav, #footer {
+  font-size: .9em;
+  color: rgb(50, 50, 50);
+  background-color: rgba(240, 248, 255, 0.45);
+}
+
+/*-----------------*/
+/* Navigation Menu */
+/*-----------------*/
+
+nav {
+  text-transform: uppercase;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  /*opacity: 0.4;
+  filter: alpha(opacity=40);*/
+}
+
+nav > ul {
+  float: right;
+}
+
+/*--------------*/
+/* Home Section */
+/*--------------*/
+
+#home {
+  width: 60%;
+  margin: 4em 0 6em 3em;
+  float: left;
+}
+
+/*-------------------*/
+/* Portfolio Section */
+/*-------------------*/
+
+#portfolio {
+  width: 90%;
+  margin-top: 1em;
+  /*center?!*/
+}
+
+.portfolio-project {
+  margin: .5em;
+  background-color: rgba(55, 19, 150, 0.95);
+  color: rgb(200, 200, 200);
   border-radius: 5px;
-  letter-spacing: .05em;
+  letter-spacing: .07em;
+  font-size: .8em;
+  min-height: 90%;
+}
+
+.portfolio-project:hover {
+  opacity: 0;
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+    -webkit-filter: grayscale(100%);
+}
+
+#portfolio-project1:hover {
+  background: url('images/projects/brrrr2.jpg');
+  background-size: cover;
+}
+
+/*--------*/
+/* Footer */
+/*--------*/
+
+#footer {
+  /*position: absolute;*/
+  /*fix this*/
+  bottom: 0px;
+  width: 100%;
+}
+
+/*-----------------*/
+/*  Media Queries  */
+/*-----------------*/
+
+/* Small screens & up */
+@media screen and (min-width: 35.5em) {
+
+}
+
+/* Medium screens & up */
+@media screen and (min-width: 48em) {
+  nav > ul {
+    /*hamburger*/
+  }
+}
+
+/* Large screens & up */
+@media screen and (min-width: 64em) {
+
+}
+
+/* x-Large screens & up */
+@media screen and (min-width: 80em) {
+
 }
