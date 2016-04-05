@@ -1,6 +1,8 @@
 'use strict';
 
+// TO-DO: reload to current page
 window.onload = function () {
+
   // Selectors ------------------
   const homeLink = document.getElementById('home-link');
   const portfolioLink = document.getElementById('portfolio-link');
@@ -11,14 +13,13 @@ window.onload = function () {
   const portfolio = document.getElementById('portfolio');
   const about = document.getElementById('about');
 
-  // Onload default -------------
-  // function default() {
-  //   home.style.display = "block";
-  //   document.body.style.background = "url('images/yarn.jpg') no-repeat center center fixed";
-  //   document.body.style.backgroundSize = "cover";
-  // };
+  // Onload defauls -------------
+  home.style.display = "block";
+  document.body.style.background = "url('images/yarn.jpg') no-repeat center center fixed";
+  document.body.style.backgroundSize = "cover";
 
-  // Events ---------------------
+
+  // Listeners ---------------------
   homeLink.addEventListener('click', () => {
     showHome();
   });
@@ -46,7 +47,6 @@ window.onload = function () {
     portfolio.style.display = "inline-flex";
     about.style.display = "none";
     document.body.style.background = "url('images/diagonal.png') repeat center center fixed";
-    // showProjectOneImage();
   };
 
   let showAbout = function () {

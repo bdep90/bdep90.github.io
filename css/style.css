@@ -2,11 +2,12 @@
 /* Utility w/ Pure */
 /*-----------------*/
 
-html, body,
+html, button, input, textarea,
 .pure-g [class *= "pure-u"] {
   font-family: 'Lato', sans-serif;
+  /*font not renderin*/
   letter-spacing: .08em;
-  color: rgb(99,52,227);
+  color: rgb(99, 52, 227);
 }
 
 /*-----------------*/
@@ -23,19 +24,23 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 2px;
   font-family: 'Advent Pro', sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
-h2 {
-  margin-bottom: 2px;
+a {
+  color: rgb(99, 52, 227);
 }
 
-img {
+/*a:hover {
+  background-color: rgba(240, 248, 255, 0.2);
+}*/
+
+.pure-img {
   border: 3px solid rgb(55, 19, 150);
   border-radius: 5px;
-  height: 200px;
-  width: 200px;
 }
 
 button.pure-button, a.pure-button {
@@ -49,12 +54,14 @@ button.button-xsmall {
   font-size: 65%;
 }
 
-button.button-small {
-  font-size: 70%;
+a.button-small {
+  font-size: 78%;
+  letter-spacing: .08em;
+  margin-bottom: 5px;
 }
 
 .padded {
-  padding: .5em;
+  padding: .8em;
 }
 
 .flexed {
@@ -74,7 +81,6 @@ button.button-small {
 }
 
 .card {
-  margin: 1em;
   background-color: rgba(146, 146, 146, 0.74902);
   border-radius: 5px;
 }
@@ -92,29 +98,36 @@ button.button-small {
 
 #home, #portfolio, #about, #projects, #resume {
   display: none;
+  margin: auto;
 }
 
 nav, #footer {
-  font-size: .9em;
-  color: rgb(50, 50, 50);
+  width: 100%;
   background-color: rgba(240, 248, 255, 0.45);
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
 }
-
 /*-----------------*/
 /* Navigation Menu */
 /*-----------------*/
 
 nav {
-  text-transform: uppercase;
   justify-content: space-between;
   margin-bottom: 1em;
   /*opacity: 0.4;
   filter: alpha(opacity=40);*/
 }
 
-nav > ul {
+#home-link, #portfolio-link, #about-link {
+  color: rgb(99, 52, 227);
+}
+
+#portfolio-link, #about-link {
   float: right;
 }
+
 
 /*--------------*/
 /* Home Section */
@@ -138,6 +151,8 @@ nav > ul {
 
 .portfolio-project {
   margin: .5em;
+  background-image: url('http://www.transparenttextures.com/patterns/asfalt-light.png');
+  background-size: auto;
   background-color: rgba(55, 19, 150, 0.95);
   color: rgb(200, 200, 200);
   border-radius: 5px;
@@ -146,19 +161,60 @@ nav > ul {
   min-height: 90%;
 }
 
-.portfolio-project:hover {
-  opacity: 0;
-    -webkit-transition: all 1s ease;
-       -moz-transition: all 1s ease;
-         -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-            transition: all 1s ease;
-    -webkit-filter: grayscale(100%);
-}
+/*.portfolio-project:hover {
+  opacity: .1;
+    -webkit-transition: all .8s ease;
+       -moz-transition: all .8s ease;
+         -o-transition: all .8s ease;
+        -ms-transition: all .8s ease;
+            transition: all .8s ease;
+}*/
 
 #portfolio-project1:hover {
-  background: url('images/projects/brrrr2.jpg');
-  background-size: cover;
+  background-image: url('images/projects/brrrr2.jpg');
+}
+
+.view-project {
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: .1em;
+  padding: .5em 0 .5em 0;
+}
+
+/*---------------*/
+/* About Section */
+/*---------------*/
+
+#about {
+  width: 90%;
+  left: 0;
+}
+
+.padded1 {
+  padding: 0 .9em .9em 0;
+}
+
+#left ul {
+  font-size: .75em;
+  padding-left: 2em;
+}
+
+#about-me-info p {
+  font-size: .9em;
+}
+
+#contact-me-info p, form {
+  font-size: .8em;
+}
+
+#contact-me-info button {
+  margin-left: 2.2em;
+}
+
+.input i {
+  float: left;
+  padding: .8em .5em 0 0;
 }
 
 /*--------*/
@@ -170,6 +226,10 @@ nav > ul {
   /*fix this*/
   bottom: 0px;
   width: 100%;
+}
+
+#footer > a {
+  color: rgb(99, 52, 227);
 }
 
 /*-----------------*/
