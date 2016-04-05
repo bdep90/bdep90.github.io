@@ -1,6 +1,6 @@
-/*-----------------*/
-/* Utility w/ Pure */
-/*-----------------*/
+/*--------------*/
+/* Pure Utility */
+/*--------------*/
 
 html, button, input, textarea,
 .pure-g [class *= "pure-u"] {
@@ -30,13 +30,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+div, p, form, span {
+  font-family: 'Lato', sans-serif;
+}
+
 a {
   color: rgb(99, 52, 227);
 }
-
-/*a:hover {
-  background-color: rgba(240, 248, 255, 0.2);
-}*/
 
 .pure-img {
   border: 3px solid rgb(55, 19, 150);
@@ -50,18 +50,36 @@ button.pure-button, a.pure-button {
   border-radius: 5px;
 }
 
+button.pure-button:hover, a.pure-button:hover {
+  background-color: rgb(70, 160, 175);
+  color: rgb(55, 19, 150);
+  border: 2px solid rgb(55, 19, 150);
+}
+
 button.button-xsmall {
   font-size: 65%;
 }
 
 a.button-small {
   font-size: 78%;
-  letter-spacing: .08em;
+  letter-spacing: .05em;
   margin-bottom: 5px;
 }
 
 .padded {
-  padding: .8em;
+  padding: .9em;
+}
+
+.padded1 {
+  padding: 0 .9em .9em 1.8em;
+}
+
+.padded2 {
+  padding: 0 .9em .9em 0;
+}
+
+.padded3 {
+  padding: 0 0 .9em .9em;
 }
 
 .flexed {
@@ -80,25 +98,28 @@ a.button-small {
   text-align: right;
 }
 
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
 .card {
-  background-color: rgba(146, 146, 146, 0.74902);
+  background-color: rgba(146, 146, 146, 0.75);
   border-radius: 5px;
-}
-
-.placeholder-img {
-  height: 200px;
-  width: 200px;
-  background-image: url(http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png);
-  background-size: cover;
-}
-
-#content {
-  margin-bottom: 5em;
 }
 
 #home, #portfolio, #about, #projects, #resume {
   display: none;
   margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#portfolio, #about, #projects {
+  width: 90%;
 }
 
 nav, #footer {
@@ -109,6 +130,7 @@ nav, #footer {
   font-size: 1em;
   text-transform: uppercase;
 }
+
 /*-----------------*/
 /* Navigation Menu */
 /*-----------------*/
@@ -124,11 +146,6 @@ nav {
   color: rgb(99, 52, 227);
 }
 
-#portfolio-link, #about-link {
-  float: right;
-}
-
-
 /*--------------*/
 /* Home Section */
 /*--------------*/
@@ -136,18 +153,11 @@ nav {
 #home {
   width: 60%;
   margin: 4em 0 6em 3em;
-  float: left;
 }
 
 /*-------------------*/
 /* Portfolio Section */
 /*-------------------*/
-
-#portfolio {
-  width: 90%;
-  margin-top: 1em;
-  /*center?!*/
-}
 
 .portfolio-project {
   margin: .5em;
@@ -161,17 +171,28 @@ nav {
   min-height: 90%;
 }
 
-/*.portfolio-project:hover {
-  opacity: .1;
-    -webkit-transition: all .8s ease;
-       -moz-transition: all .8s ease;
-         -o-transition: all .8s ease;
-        -ms-transition: all .8s ease;
-            transition: all .8s ease;
-}*/
-
 #portfolio-project1:hover {
-  background-image: url('images/projects/brrrr2.jpg');
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/brrrr2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project2:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/bl.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project3:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/brrrr.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project4:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/betsee.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .view-project {
@@ -186,15 +207,6 @@ nav {
 /* About Section */
 /*---------------*/
 
-#about {
-  width: 90%;
-  left: 0;
-}
-
-.padded1 {
-  padding: 0 .9em .9em 0;
-}
-
 #left ul {
   font-size: .75em;
   padding-left: 2em;
@@ -204,7 +216,7 @@ nav {
   font-size: .9em;
 }
 
-#contact-me-info p, form {
+#contact-me-info span, form {
   font-size: .8em;
 }
 
@@ -213,8 +225,48 @@ nav {
 }
 
 .input i {
-  float: left;
   padding: .8em .5em 0 0;
+}
+
+/*---------------*/
+/* Projects Show */
+/*---------------*/
+
+.project {
+  display: none;
+}
+
+.project i {
+  color: rgb(55, 19, 150);
+}
+
+.project .padded1 div,  .project .padded1 p {
+  font-size: .8em;
+}
+
+.project img {
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(89,67,89,0.77);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(89,67,89,0.77);
+  box-shadow: 10px 10px 5px -4px rgba(89,67,89,0.77);
+}
+
+/*-------------*/
+/* Resume Show */
+/*-------------*/
+
+#resume {
+  width: 75%;
+  height: 90%;
+  overflow: scroll;
+}
+
+#resume i {
+  color: rgb(55, 19, 150);
+}
+
+#resume p {
+  margin: auto;
+  width: 80%;
 }
 
 /*--------*/
