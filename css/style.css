@@ -1,0 +1,377 @@
+/*--------------*/
+/* Pure Utility */
+/*--------------*/
+
+html, button, input, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: 'Lato', sans-serif;
+  /*font not renderin*/
+  letter-spacing: .08em;
+  color: rgb(55, 19, 150);
+}
+
+/*-----------------*/
+/* Default Styling */
+/*-----------------*/
+
+@font-face {
+  font-family: Sunbreath;
+  src: url(sunbreath-font/sunbreath.ttf);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 2.2em;
+  background-color: rgba(240, 248, 255, 0.45); /*out later*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 2px;
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+div, p, form, span {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: rgb(99, 52, 227);
+  text-decoration: none;
+}
+
+.pure-img {
+  border: 3px solid rgb(55, 19, 150);
+  border-radius: 5px;
+}
+
+button.pure-button, a.pure-button {
+  background-color: rgb(55, 19, 150);
+  color: rgb(170, 170, 170);
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+button.pure-button:hover, a.pure-button:hover {
+  background-color: rgb(70, 160, 175);
+  color: rgb(55, 19, 150);
+  border: 2px solid rgb(55, 19, 150);
+}
+
+button.button-xsmall, a.button-xsmall {
+  font-size: 65%;
+}
+
+a.button-small {
+  font-size: 78%;
+  letter-spacing: .05em;
+  margin-bottom: 5px;
+}
+
+.padded {
+  padding: .9em;
+}
+
+.padded1 {
+  padding: 0 .9em .9em 1.8em;
+}
+
+.padded2 {
+  padding: 0 .9em .9em 0;
+}
+
+.padded3 {
+  padding: 0 0 .9em .9em;
+}
+
+.padded4 {
+  margin-top: .9em;
+}
+
+.flexed {
+  display: inline-flex;
+}
+
+.centered {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+.card {
+  background-color: rgba(146, 146, 146, 0.75);
+  border-radius: 5px;
+}
+
+#portfolio, #about, #projects, #resume {
+  display: none;
+  margin: 4em auto 4em auto;
+}
+
+#portfolio, #about, #projects {
+  width: 90%;
+}
+
+nav, #footer {
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.45);
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/*-----------------*/
+/* Navigation Menu */
+/*-----------------*/
+
+nav {
+  margin: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  height: 2.2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home-link, #portfolio-link, #about-link {
+  color: rgb(99, 52, 227);
+}
+
+#home-link:hover, #portfolio-link:hover, #about-link:hover {
+  color: rgb(70, 160, 175);
+  font-size: 1.1em;
+  -webkit-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+}
+
+/*--------------*/
+/* Home Section */
+/*--------------*/
+
+#home {
+  width: 60%;
+  margin-top: 6em;
+  margin-left: 3em;
+  display: none;
+  background-color: rgba(146, 146, 146, 0.8);
+  color: rgb(99, 52, 227);
+  border-radius: 5px;
+  line-height: 1.6em;
+}
+
+#home span {
+  font-family: Sunbreath;
+  font-size: 2.3em;
+  letter-spacing: .06em;
+}
+
+/*-------------------*/
+/* Portfolio Section */
+/*-------------------*/
+
+.portfolio-project {
+  margin: .5em;
+  background-image: url('http://www.transparenttextures.com/patterns/asfalt-light.png');
+  background-size: auto;
+  background-color: rgba(55, 19, 150, 0.95);
+  color: rgb(200, 200, 200);
+  border-radius: 5px;
+  letter-spacing: .07em;
+  font-size: .8em;
+  min-height: 90%;
+}
+
+.portfolio-project-titles {
+  text-transform: uppercase;
+}
+
+.view-project {
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: .1em;
+  padding: .5em 0 .5em 0;
+}
+
+#portfolio-project1:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/mystery-word.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project2:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/hair-xpo.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project3:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/sports-guide.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project4:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/betsee.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project5:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/brrrr.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project6:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/bl.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project8:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/inara1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/*---------------*/
+/* About Section */
+/*---------------*/
+
+#about {
+  line-height: 1.2em;
+}
+
+#left ul {
+  font-size: .75em;
+  padding-left: 2em;
+}
+
+#about-me-info p {
+  font-size: .85em;
+  letter-spacing: .1em;
+}
+
+#contact-me-info span, form {
+  font-size: .8em;
+  letter-spacing: .15em;
+}
+
+#contact-me-info button {
+  margin-left: 2.2em;
+}
+
+.input i {
+  padding: .8em .5em 0 0;
+}
+
+/*---------------*/
+/* Projects Show */
+/*---------------*/
+
+.project {
+  display: none;
+  width: auto;
+  margin: auto;
+}
+
+.project i.fa-times {
+  color: rgb(55, 19, 150);
+}
+
+.project h3 {
+  font-weight: 900;
+}
+
+.project .padded1 div, .project .padded1 p {
+  font-size: .85em;
+}
+
+.project img {
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(89,67,89,0.77);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(89,67,89,0.77);
+  box-shadow: 10px 10px 5px -4px rgba(89,67,89,0.77);
+}
+
+/*-------------*/
+/* Resume Show */
+/*-------------*/
+
+#resume {
+  width: 75%;
+  height: 90%;
+  overflow: scroll;
+}
+
+#resume i {
+  color: rgb(55, 19, 150);
+}
+
+#resume p {
+  margin: auto;
+  width: 80%;
+}
+
+/*--------*/
+/* Footer */
+/*--------*/
+
+#footer {
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  height: 2.2em;
+}
+
+#footer > a {
+  color: rgb(99, 52, 227);
+}
+
+/*-----------------*/
+/*  Media Queries  */
+/*-----------------*/
+
+/* Small screens & up */
+@media screen and (min-width: 35.5em) {
+
+}
+
+/* Medium screens & up */
+@media screen and (min-width: 48em) {
+
+}
+
+/* Large screens & up */
+@media screen and (min-width: 64em) {
+
+}
+
+/* x-Large screens & up */
+@media screen and (min-width: 80em) {
+
+}

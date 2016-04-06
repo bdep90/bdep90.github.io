@@ -1,0 +1,22 @@
+{
+  "name": "Portfolio",
+  "homepage": "https://github.com/bdep90/bdep90.github.io",
+  "authors": [
+    "Bridgette Depay <b.depay@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "^0.6.0"
+  }
+}
