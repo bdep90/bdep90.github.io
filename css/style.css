@@ -7,12 +7,17 @@ html, button, input, textarea,
   font-family: 'Lato', sans-serif;
   /*font not renderin*/
   letter-spacing: .08em;
-  color: rgb(99, 52, 227);
+  color: rgb(55, 19, 150);
 }
 
 /*-----------------*/
 /* Default Styling */
 /*-----------------*/
+
+@font-face {
+  font-family: Sunbreath;
+  src: url(sunbreath-font/sunbreath.ttf);
+}
 
 html, body {
   height:100%;
@@ -36,6 +41,7 @@ div, p, form, span {
 
 a {
   color: rgb(99, 52, 227);
+  text-decoration: none;
 }
 
 .pure-img {
@@ -56,7 +62,7 @@ button.pure-button:hover, a.pure-button:hover {
   border: 2px solid rgb(55, 19, 150);
 }
 
-button.button-xsmall {
+button.button-xsmall, a.button-xsmall {
   font-size: 65%;
 }
 
@@ -80,6 +86,10 @@ a.button-small {
 
 .padded3 {
   padding: 0 0 .9em .9em;
+}
+
+.padded4 {
+  margin-top: .9em;
 }
 
 .flexed {
@@ -153,6 +163,16 @@ nav {
 #home {
   width: 60%;
   margin: 4em 0 6em 3em;
+  background-color: rgba(146, 146, 146, 0.8);
+  color: rgb(99, 52, 227);
+  border-radius: 5px;
+  line-height: 1.6em;
+}
+
+#home span {
+  font-family: Sunbreath;
+  font-size: 2.3em;
+  letter-spacing: .06em;
 }
 
 /*-------------------*/
@@ -171,28 +191,8 @@ nav {
   min-height: 90%;
 }
 
-#portfolio-project1:hover {
-  color: rgba(0, 0, 0, 0);
-  background: url('../images/projects/brrrr2.jpg') no-repeat center;
-  background-size: cover;
-}
-
-#portfolio-project2:hover {
-  color: rgba(0, 0, 0, 0);
-  background: url('../images/projects/bl.jpg') no-repeat center;
-  background-size: cover;
-}
-
-#portfolio-project3:hover {
-  color: rgba(0, 0, 0, 0);
-  background: url('../images/projects/brrrr.jpg') no-repeat center;
-  background-size: cover;
-}
-
-#portfolio-project4:hover {
-  color: rgba(0, 0, 0, 0);
-  background: url('../images/projects/betsee.jpg') no-repeat center;
-  background-size: cover;
+.portfolio-project-titles {
+  text-transform: uppercase;
 }
 
 .view-project {
@@ -203,9 +203,55 @@ nav {
   padding: .5em 0 .5em 0;
 }
 
+#portfolio-project1:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/mystery-word.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project2:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/hair-xpo.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project3:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/sports-guide.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project4:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/betsee.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project5:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/brrrr.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project6:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/bl.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project8:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/inara1.jpg') no-repeat center;
+  background-size: cover;
+}
+
 /*---------------*/
 /* About Section */
 /*---------------*/
+
+#about {
+  line-height: 1.3em;
+}
 
 #left ul {
   font-size: .75em;
@@ -213,11 +259,13 @@ nav {
 }
 
 #about-me-info p {
-  font-size: .9em;
+  font-size: .85em;
+  letter-spacing: .1em;
 }
 
 #contact-me-info span, form {
   font-size: .8em;
+  letter-spacing: .15em;
 }
 
 #contact-me-info button {
@@ -234,14 +282,20 @@ nav {
 
 .project {
   display: none;
+  width: auto;
+  margin: auto;
 }
 
-.project i {
+.project i.fa-times {
   color: rgb(55, 19, 150);
 }
 
-.project .padded1 div,  .project .padded1 p {
-  font-size: .8em;
+.project h3 {
+  font-weight: 900;
+}
+
+.project .padded1 div, .project .padded1 p {
+  font-size: .85em;
 }
 
 .project img {

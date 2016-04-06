@@ -5,6 +5,7 @@ window.onload = () => {
   // Selectors ------------------
   // Main Pages
   const content = document.getElementById('content');
+
   const homeLink = document.getElementById('home-link');
   const home = document.getElementById('home');
   const portfolioLink = document.getElementById('portfolio-link');
@@ -197,9 +198,9 @@ window.onload = () => {
     allProjects.style.display = "block";
     projectOneCard.style.display = "none";
     projectTwoCard.style.display = "none";
-    projectThreeCard.style.display = "none";
+    projectThreeCard.style.display = "block";
     projectFourCard.style.display = "none";
-    projectFiveCard.style.display = "block";
+    projectFiveCard.style.display = "none";
     projectSixCard.style.display = "none";
     projectEightCard.style.display = "none";
   };
