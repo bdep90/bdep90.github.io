@@ -1,6 +1,6 @@
 'use strict';
+// TO-DO: reload to current page & scrollTop
 
-// TO-DO: reload to current page, scrollTop
 window.onload = () => {
   // Selectors ------------------
   // Main Pages
@@ -115,7 +115,6 @@ window.onload = () => {
     allProjects.style.display = "none";
     resume.style.display = "none";
     document.body.style.background = "url('images/diagonal.png') repeat center center fixed";
-    top.location.href = '#top';
   };
 
   let showAbout = () => {

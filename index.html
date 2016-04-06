@@ -15,15 +15,13 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Advent+Pro:300|Lato' rel='stylesheet' type='text/css'>
   </head>
-  <body>
-    <a href="#" id="scroll"></a>
-
+  <body onClick="window.location.href=window.location.href">
     <!-- Navigation Bar -->
-    <nav class="pure-menu pure-menu-horizontal flexed">
-      <a href="#home" class="pure-menu-heading pure-menu-link" id="home-link">Bridgette Depay [Full-Stack Web Developer]</a>
+    <nav class="pure-menu pure-menu-horizontal flexed" id="">
+      <a href="#home" class="pure-menu-heading pure-menu-link" id="home-link" rel="external">Bridgette Depay</a>
       <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="#portfolio" class="pure-menu-link float-r" id="portfolio-link">Portfolio</a></li>
-        <li class="pure-menu-item"><a href="#about" class="pure-menu-link float-r" id="about-link">About</a></li>
+        <li class="pure-menu-item"><a href="#portfolio" class="pure-menu-link float-r" id="portfolio-link" rel="external">Portfolio</a></li>
+        <li class="pure-menu-item"><a href="#about" class="pure-menu-link float-r" id="about-link" rel="external">About</a></li>
       </ul>
     </nav>
 
@@ -128,7 +126,8 @@
             <div class="padded1" id="about-me-info">
               <h2>About Me</h2>
               <p>I'm a freelance Full-Stack Web Developer with a budding interest in User Experience Design (UX). I recently completed the General Assembly Web Development Immersive. My personal and professional interests include social awareness, mentorship, and innovation.</p>
-              <p>SOME FUN STUFF<br>≺ I make crochetted bags, purses, scarves, hats, mittens... &infin;<br>≺ I was a member of the Claremont Colleges Ballroom Dance Company (CCBDC).</p>
+              <p><strong>RECENT TECHNICAL WORKSHOPS</strong><br>≺ Introduction to Deploying Applications on AWS, <i>Amazon Web Services</i><br>≺ Introduction to Python Programming, <i>General Assembly</i><br>≺ User Experience Design Bootcamp, <i>General Assembly</i><br>≺ Introduction to Xcode: How to Build Your First iOS App, <i>General Assembly</i></p>
+              <p><strong>SOME FUN STUFF<strong><br>≺ I make crochetted bags, purses, scarves, hats, mittens... &infin;<br>≺ I was a member of the Claremont Colleges Ballroom Dance Company.</p>
               <div class="about-me-buttons">
                 <a href="#resume" class="button-small pure-button" id="resume-link">
                   <i class="fa fa-file-text fa-fw"></i> My Resume
@@ -146,7 +145,7 @@
               <div class="pure-g">
                 <p class="pure-u-1 pure-u-md-2-5">
                   <i class="fa fa-envelope fa-fw"></i> <span><a href="mailto:about@bdepay.info">about@bdepay.info</a></span><br>
-                  <i class="fa fa-phone fa-fw"></i> <span>111.111.1111</span>
+                  <i class="fa fa-phone fa-fw"></i> <span><a href="tel://1-917-960-3494">917.960.3494</a></span>
                 </p>
                 <div class="pure-u-1 pure-u-md-3-5" id="contact-me-form">
                   <form class="pure-form pure-form-stacked" id="contact-me-form" method="post" action="contact_me.php">
@@ -187,7 +186,9 @@
         <a href="#" class="close padded3 float-r"><i class="close fa fa-times fa-lg"></i></a>
         <div class="pure-g flexed">
           <div class="pure-u-1 pure-u-md-2-5" id="project1-imgs">
-            <img class="pure-img" src="images/projects/mystery-word.jpg"></img>
+            <img class="pure-img" src="images/projects/wireframes/mystery-word-wireframe2.png"></img>
+            <img class="pure-img padded4" src="images/projects/wireframes/mystery-word-wireframe.png"></img>
+            <img class="pure-img padded4" src="images/projects/mystery-word.jpg"></img>
           </div>
           <div class="pure-u-1 pure-u-md-3-5" id="project1-blurb">
             <div class="padded1">
@@ -204,7 +205,8 @@
         <a href="#" class="close padded3 float-r"><i class="close fa fa-times fa-lg"></i></a>
         <div class="pure-g flexed">
           <div class="pure-u-1 pure-u-md-2-5" id="project4-imgs">
-            <img class="pure-img" src="images/projects/betsee.jpg"></img>
+            <img class="pure-img" src="images/projects/wireframes/betsee-wireframe.png"></img>
+            <img class="pure-img padded4" src="images/projects/betsee.jpg"></img>
           </div>
           <div class="pure-u-1 pure-u-md-3-5" id="project4-blurb">
             <div class="padded1">
@@ -222,7 +224,8 @@
         <a href="#" class="close padded3 float-r"><i class="fa fa-times fa-lg"></i></a>
         <div class="pure-g flexed">
           <div class="pure-u-1 pure-u-md-2-5" id="project2-imgs">
-            <img class="pure-img" src="images/projects/hair-xpo2.jpg"></img>
+            <img class="pure-img" src="images/projects/wireframes/hair-xpo-wireframe.png"></img>
+            <img class="pure-img padded4" src="images/projects/hair-xpo2.jpg"></img>
           </div>
           <div class="pure-u-1 pure-u-md-3-5" id="project2-blurb">
             <div class="padded1">
@@ -261,7 +264,8 @@
         <a href="#" class="close padded3 float-r"><i class="fa fa-times fa-lg"></i></a>
         <div class="pure-g flexed">
           <div class="pure-u-1 pure-u-md-2-5" id="project8-imgs">
-            <img class="pure-img" src="images/projects/inara2.jpg"></img>
+            <img class="pure-img" src="images/projects/wireframes/inara-wireframe.jpeg"></img>
+            <img class="pure-img padded4" src="images/projects/inara2.jpg"></img>
             <img class="pure-img padded4" src="images/projects/inara3.jpg"></img>
           </div>
           <div class="pure-u-1 pure-u-md-3-5" id="project8-blurb">
@@ -302,13 +306,14 @@
         <a href="#" class="close padded3 float-r"><i class="fa fa-times fa-lg"></i></a>
         <div class="pure-g flexed">
           <div class="pure-u-1 pure-u-md-2-5" id="project6-imgs">
-            <img class="pure-img" src="images/projects/bl2.jpg"></img>
+            <img class="pure-img" src="images/projects/wireframes/bl-wireframe.png"></img>
+            <img class="pure-img padded4" src="images/projects/bl2.jpg"></img>
           </div>
           <div class="pure-u-1 pure-u-md-3-5" id="project6-blurb">
             <div class="padded1">
               <h3 id="project-title">BakedList</h3>
               <div>Class Project</div>
-              <p>Track every sweet you eat with this sweet app. My goal was to create a bug-free app while integrating a third-party API (something I only had prior experience doing with Node and Express). Success!</p>
+              <p>Track every sweet you eat with this sweet app. My goal was to create a bug-free application while integrating a third-party API (something I only had prior experience doing with Node and Express). Success!</p>
               <p><i>Username/Password: testing</i></p>
               <p>Technologies Used: Ruby on Rails, Bcrypt, Pry-rails, Paperclip, Unirest,
               <a href="http://food2fork.com/about/api" target="_blank">Food2Fork API</a></p>
@@ -330,11 +335,11 @@
     </div>
 
     <!-- Footer -->
-    <div class="pure-menu pure-menu-horizontal" id="footer">
+    <footer class="pure-menu pure-menu-horizontal" id="footer">
       <a href="#" class="pure-menu-heading">
         Copyright &copy; 2016 Bridgette Depay
       </a>
-    </div>
+    </footer>
 
     <!-- Contact Form PHP -->
     <script src="mail/contact_me.php" type="text/php"></script>
