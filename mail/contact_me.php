@@ -2,7 +2,7 @@
 if(isset($_POST['submit'])) {
 
     // Personal Info
-    $email_to = "b.depay@yahoo.com";
+    $email_to = "about@bdepay.info";
     $email_subject = "Message from Portfolio";
 
     // Error
