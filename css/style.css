@@ -45,6 +45,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: rgb(50, 113, 124);
+}
+
 .pure-img {
   border: 3px solid rgb(55, 19, 150);
   border-radius: 5px;
@@ -78,7 +82,7 @@ a.button-small {
 }
 
 .padded1 {
-  padding: 0 .9em .9em 1.8em;
+  padding: 0 .7em .9em 1.8em;
 }
 
 .padded2 {
@@ -89,7 +93,11 @@ a.button-small {
   padding: 0 0 .9em .9em;
 }
 
-.padded4 {
+.padded-sm {
+  padding: .3em 1em;
+}
+
+.margin-top {
   margin-top: .9em;
 }
 
@@ -295,8 +303,7 @@ nav {
 
 .project {
   display: none;
-  width: auto;
-  margin: auto;
+  margin-left: -1%;
 }
 
 .project i.fa-times {
