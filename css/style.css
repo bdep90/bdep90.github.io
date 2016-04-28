@@ -41,12 +41,12 @@ div, p, form, span {
 }
 
 a {
-  color: rgb(99, 52, 227);
+  color: rgb(55, 19, 150);
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(50, 113, 124);
+  color: rgb(99, 52, 227);
 }
 
 .pure-img {
@@ -64,7 +64,6 @@ button.pure-button, a.pure-button {
 button.pure-button:hover, a.pure-button:hover {
   background-color: rgb(70, 160, 175);
   color: rgb(55, 19, 150);
-  border: 2px solid rgb(55, 19, 150);
 }
 
 button.button-xsmall, a.button-xsmall {
@@ -164,6 +163,7 @@ nav, #footer {
 
 nav {
   top: 0;
+  justify-content: space-between;
 }
 
 #home-link, #portfolio-link, #about-link {
