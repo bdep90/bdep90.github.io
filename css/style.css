@@ -134,6 +134,21 @@ i.fa-times {
   border-radius: 5px;
 }
 
+nav, #footer {
+  height: 2.2em;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(240, 248, 255, 0.45);
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#content {
+  height: inherit;
+}
+
 #portfolio, #about, #projects, #resume {
   display: none;
   margin: 4em auto 4em auto;
@@ -143,27 +158,12 @@ i.fa-times {
   width: 90%;
 }
 
-nav, #footer {
-  width: 100%;
-  background-color: rgba(240, 248, 255, 0.45);
-  font-family: 'Advent Pro', sans-serif;
-  font-weight: 700;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
 /*-----------------*/
 /* Navigation Menu */
 /*-----------------*/
 
 nav {
-  margin: 0;
   top: 0;
-  width: 100%;
-  position: absolute;
-  height: 2.2em;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #home-link, #portfolio-link, #about-link {
@@ -344,11 +344,7 @@ nav {
 /*--------*/
 
 #footer {
-  margin: 0;
   bottom: 0;
-  width: 100%;
-  position: absolute;
-  height: 2.2em;
 }
 
 #footer > a {
