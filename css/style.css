@@ -71,7 +71,7 @@ button.button-xsmall, a.button-xsmall {
 }
 
 a.button-small {
-  font-size: 78%;
+  font-size: 80%;
   letter-spacing: .05em;
   margin-bottom: 5px;
 }
@@ -134,23 +134,24 @@ i.fa-times {
 }
 
 nav, #footer {
-  height: 2.2em;
+  height: 2.4em;
   width: 100%;
   position: absolute;
+  justify-content: space-between;
   background-color: rgba(240, 248, 255, 0.45);
   font-family: 'Advent Pro', sans-serif;
-  font-weight: 700;
-  font-size: 1em;
+  font-weight: bolder;
+  font-size: 1.1em;
   text-transform: uppercase;
 }
 
-#content {
+#content, #projects, #resume {
   height: inherit;
 }
 
 #portfolio, #about, #projects, #resume {
   display: none;
-  margin: 4em auto 4em auto;
+  margin: 4em auto 3em auto;
 }
 
 #portfolio, #about, #projects {
@@ -163,7 +164,6 @@ nav, #footer {
 
 nav {
   top: 0;
-  justify-content: space-between;
 }
 
 #home-link, #portfolio-link, #about-link {
@@ -188,8 +188,9 @@ nav {
   margin-top: 6em;
   margin-left: 3em;
   display: none;
-  background-color: rgba(146, 146, 146, 0.8);
+  background-color: rgba(184, 184, 184, 0.9);
   color: rgb(99, 52, 227);
+  font-size: 1.2em;
   border-radius: 5px;
   line-height: 1.6em;
 }
@@ -284,7 +285,6 @@ nav {
 }
 
 #about-me-info p {
-  font-size: .85em;
   letter-spacing: .1em;
 }
 
@@ -314,7 +314,7 @@ nav {
   font-weight: 900;
 }
 
-.project .padded1 div, .project .padded1 p {
+.project .padded1 div {
   font-size: .85em;
 }
 
@@ -347,8 +347,20 @@ nav {
   bottom: 0;
 }
 
-#footer > a {
+#footer > a , i.footer-icons{
   color: rgb(99, 52, 227);
+}
+
+a.footer-icons {
+  padding: .5em .5em .5em 0;
+}
+
+a.footer-icons:hover {
+  background-color: transparent;
+}
+
+i.footer-icons:hover {
+  color: rgb(70, 160, 175);
 }
 
 /*-----------------*/
@@ -362,15 +374,21 @@ nav {
 
 /* Medium screens & up */
 @media screen and (min-width: 48em) {
-
+  body {
+    font-size: 90%;
+  }
 }
 
 /* Large screens & up */
 @media screen and (min-width: 64em) {
-
+  body {
+    font-size: 80%;
+  }
 }
 
 /* x-Large screens & up */
 @media screen and (min-width: 80em) {
-
+  body {
+    font-size: 70%;
+  }
 }
