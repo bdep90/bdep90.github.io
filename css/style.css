@@ -325,29 +325,12 @@ i.footer-icons:hover {
 /*  Media Queries  */
 /*-----------------*/
 
-/* Small screens & up */
-@media screen and (min-width: 35.5em) {
-
-}
-
-/* Medium screens & up */
-@media screen and (min-width: 48em) {
-  body {
-    font-size: 90%;
-  }
-}
-
-/* Large screens & up */
-@media screen and (min-width: 64em) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
   body {
     font-size: 80%;
-  }
-}
-
-/* x-Large screens & up */
-@media screen and (min-width: 80em) {
-  body {
-    font-size: 70%;
   }
   nav {
     height: 4em;
@@ -355,7 +338,35 @@ i.footer-icons:hover {
   }
   #home, #portfolio, #about, #projects, #resume {
     display: none;
-    margin: 5.2em auto 1em;
+    margin: 5.2em auto 2em;
+    width: 100%;
+  }
+  #about-me {
+    margin-top: 1em;
+  }
+  #contact-me {
+    margin-right: 0;
+  }
+  #footer {
+    font-size: 80%;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+  body {
+    font-size: 95%;
+  }
+  nav {
+    height: 4em;
+    justify-content: center;
+  }
+  #home, #portfolio, #about, #projects, #resume {
+    display: none;
+    margin: 5.2em auto 1.5em;
     width: 100%;
   }
   #about-me {
@@ -367,4 +378,16 @@ i.footer-icons:hover {
   #footer {
     font-size: 90%;
   }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
 }
