@@ -391,3 +391,31 @@ and (min-width : 1224px) {
 and (min-width : 1824px) {
 /* Styles */
 }
+
+/* iPhone ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 2),
+only screen and (min-device-pixel-ratio : 2) {
+/* Styles */
+  body {
+    font-size: 80%;
+  }
+  nav {
+    height: 4em;
+    justify-content: center;
+  }
+  #home, #portfolio, #about, #projects, #resume {
+    display: none;
+    margin: 5.2em auto 2em;
+    width: 100%;
+  }
+  #about-me {
+    margin-top: 1em;
+  }
+  #contact-me {
+    margin-right: 0;
+  }
+  #footer {
+    font-size: 80%;
+  }
+}
