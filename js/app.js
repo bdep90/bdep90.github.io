@@ -4,8 +4,6 @@
 window.onload = () => {
   // Selectors ------------------
   // Main Pages
-  const content = document.getElementById('content');
-
   const homeLink = document.getElementById('home-link');
   const home = document.getElementById('home');
   const portfolioLink = document.getElementById('portfolio-link');
@@ -20,6 +18,8 @@ window.onload = () => {
   const projectOneCard = document.getElementById('project1');
   const projectFourLink = document.getElementById('portfolio-project4');
   const projectFourCard = document.getElementById('project4');
+  const projectSevenLink = document.getElementById('portfolio-project7');
+  const projectSevenCard = document.getElementById('project7');
   const projectTwoLink = document.getElementById('portfolio-project2');
   const projectTwoCard = document.getElementById('project2');
   const projectFiveLink = document.getElementById('portfolio-project5');
@@ -61,6 +61,10 @@ window.onload = () => {
 
   projectFourLink.addEventListener('click', () => {
     showProjectFour();
+  });
+
+  projectSevenLink.addEventListener('click', () => {
+    showProjectSeven();
   });
 
   projectTwoLink.addEventListener('click', () => {
@@ -134,91 +138,111 @@ window.onload = () => {
 
   let showProjectOne = () => {
     hideMainPages();
-    allProjects.style.display = "block";
+    allProjects.style.display = "flex";
     projectOneCard.style.display = "block";
     projectTwoCard.style.display = "none";
     projectThreeCard.style.display = "none";
     projectFourCard.style.display = "none";
     projectFiveCard.style.display = "none";
     projectSixCard.style.display = "none";
+    projectSevenCard.style.display = "none";
     projectEightCard.style.display = "none";
   };
 
   let showProjectFour = () => {
     hideMainPages();
-    allProjects.style.display = "block";
+    allProjects.style.display = "flex";
     projectOneCard.style.display = "none";
     projectTwoCard.style.display = "none";
     projectThreeCard.style.display = "none";
     projectFourCard.style.display = "block";
     projectFiveCard.style.display = "none";
     projectSixCard.style.display = "none";
+    projectSevenCard.style.display = "none";
+    projectEightCard.style.display = "none";
+  };
+
+  let showProjectSeven = () => {
+    hideMainPages();
+    allProjects.style.display = "flex";
+    projectOneCard.style.display = "none";
+    projectTwoCard.style.display = "none";
+    projectThreeCard.style.display = "none";
+    projectFourCard.style.display = "none";
+    projectFiveCard.style.display = "none";
+    projectSixCard.style.display = "none";
+    projectSevenCard.style.display = "block";
     projectEightCard.style.display = "none";
   };
 
   let showProjectTwo = () => {
     hideMainPages();
-    allProjects.style.display = "block";
+    allProjects.style.display = "flex";
     projectOneCard.style.display = "none";
     projectTwoCard.style.display = "block";
     projectThreeCard.style.display = "none";
     projectFourCard.style.display = "none";
     projectFiveCard.style.display = "none";
     projectSixCard.style.display = "none";
+    projectSevenCard.style.display = "none";
     projectEightCard.style.display = "none";
   };
 
   let showProjectFive = () => {
     hideMainPages();
-    allProjects.style.display = "block";
+    allProjects.style.display = "flex";
     projectOneCard.style.display = "none";
     projectTwoCard.style.display = "none";
     projectThreeCard.style.display = "none";
     projectFourCard.style.display = "none";
     projectFiveCard.style.display = "block";
     projectSixCard.style.display = "none";
+    projectSevenCard.style.display = "none";
     projectEightCard.style.display = "none";
   };
 
   let showProjectEight = () => {
     hideMainPages();
-    allProjects.style.display = "block";
+    allProjects.style.display = "flex";
     projectOneCard.style.display = "none";
     projectTwoCard.style.display = "none";
     projectThreeCard.style.display = "none";
     projectFourCard.style.display = "none";
     projectFiveCard.style.display = "none";
     projectSixCard.style.display = "none";
+    projectSevenCard.style.display = "none";
     projectEightCard.style.display = "block";
   };
 
   let showProjectThree = () => {
     hideMainPages();
-    allProjects.style.display = "block";
+    allProjects.style.display = "flex";
     projectOneCard.style.display = "none";
     projectTwoCard.style.display = "none";
     projectThreeCard.style.display = "block";
     projectFourCard.style.display = "none";
     projectFiveCard.style.display = "none";
     projectSixCard.style.display = "none";
+    projectSevenCard.style.display = "none";
     projectEightCard.style.display = "none";
   };
 
   let showProjectSix = () => {
     hideMainPages();
-    allProjects.style.display = "block";
+    allProjects.style.display = "flex";
     projectOneCard.style.display = "none";
     projectTwoCard.style.display = "none";
     projectThreeCard.style.display = "none";
     projectFourCard.style.display = "none";
     projectFiveCard.style.display = "none";
     projectSixCard.style.display = "block";
+    projectSevenCard.style.display = "none";
     projectEightCard.style.display = "none";
   };
 
   let showResume = () => {
     hideMainPages();
-    resume.style.display = "block";
+    resume.style.display = "flex";
   };
 
 };
