@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  margin: 2.2em;
+  top: 0; bottom: 0; right: 0; left: 0;
   background-color: rgba(240, 248, 255, 0.45); /*out later*/
 }
 
@@ -41,12 +41,12 @@ div, p, form, span {
 }
 
 a {
-  color: rgb(55, 19, 150);
+  color: rgb(99, 52, 227);
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(99, 52, 227);
+  color: rgb(55, 19, 150);
 }
 
 .pure-img {
@@ -80,32 +80,13 @@ i.fa-times {
   color: rgb(55, 19, 150);
 }
 
-.padded {
-  padding: .9em;
-}
-
-.padded1 {
-  padding: 0 .7em .9em 1.8em;
-}
-
-.padded2 {
-  padding: 0 .9em .9em 0;
-}
-
-.padded3 {
-  padding: 0 0 .9em .9em;
-}
-
-.padded-sm {
-  padding: .3em 1em;
-}
-
 .margin-top {
   margin-top: .9em;
 }
 
 .flexed {
   display: inline-flex;
+  flex-wrap: wrap;
 }
 
 .centered {
@@ -128,14 +109,26 @@ i.fa-times {
   float: right;
 }
 
+.padded {
+  padding: .9em;
+}
+
+.padded-l {
+  padding: .9em .9em .9em 1.8em;
+}
+
+.padded-close {
+  padding-left: .9em;
+}
+
 .card {
   background-color: rgba(146, 146, 146, 0.75);
   border-radius: 5px;
+  padding: .9em;
 }
 
 nav, #footer {
-  height: 2.4em;
-  width: 100%;
+  height: 2em;
   position: absolute;
   justify-content: space-between;
   background-color: rgba(240, 248, 255, 0.45);
@@ -145,16 +138,9 @@ nav, #footer {
   text-transform: uppercase;
 }
 
-#content, #projects, #resume {
-  height: inherit;
-}
-
 #portfolio, #about, #projects, #resume {
   display: none;
-  margin: 4em auto 3em auto;
-}
-
-#portfolio, #about, #projects {
+  margin: 4em auto;
   width: 90%;
 }
 
@@ -164,6 +150,7 @@ nav, #footer {
 
 nav {
   top: 0;
+  align-items: center;
 }
 
 #home-link, #portfolio-link, #about-link {
@@ -184,10 +171,9 @@ nav {
 /*--------------*/
 
 #home {
-  width: 60%;
-  margin-top: 6em;
-  margin-left: 3em;
   display: none;
+  margin: 5em 0 3em 3em;
+  width: 60%;
   background-color: rgba(184, 184, 184, 0.9);
   color: rgb(99, 52, 227);
   font-size: 1.2em;
@@ -201,17 +187,21 @@ nav {
   letter-spacing: .06em;
 }
 
+#home p {
+  padding: 1em;
+}
+
 /*-------------------*/
 /* Portfolio Section */
 /*-------------------*/
 
 .portfolio-project {
-  margin: .5em;
   background-image: url('http://www.transparenttextures.com/patterns/asfalt-light.png');
   background-size: auto;
   background-color: rgba(55, 19, 150, 0.95);
   color: rgb(200, 200, 200);
   border-radius: 5px;
+  margin: 0 .5em .5em .5em;
   letter-spacing: .07em;
   font-size: .8em;
   min-height: 90%;
@@ -223,8 +213,8 @@ nav {
 
 .view-project {
   font-family: 'Advent Pro', sans-serif;
-  text-transform: uppercase;
   font-size: 1.3em;
+  text-transform: uppercase;
   letter-spacing: .1em;
   padding: .5em 0 .5em 0;
 }
@@ -265,9 +255,15 @@ nav {
   background-size: cover;
 }
 
-#portfolio-project8:hover {
+#portfolio-project7:hover {
   color: rgba(0, 0, 0, 0);
   background: url('../images/projects/inara1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#portfolio-project8:hover {
+  color: rgba(0, 0, 0, 0);
+  background: url('../images/projects/gal2.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -275,30 +271,12 @@ nav {
 /* About Section */
 /*---------------*/
 
-#about {
+#contact-me {
+  margin-right: 1em;
+}
+
+#about-me p {
   line-height: 1.2em;
-}
-
-#left ul {
-  font-size: .75em;
-  padding-left: 2em;
-}
-
-#about-me-info p {
-  letter-spacing: .1em;
-}
-
-#contact-me-info span, form {
-  font-size: .8em;
-  letter-spacing: .15em;
-}
-
-#contact-me-info button {
-  margin-left: 2.2em;
-}
-
-.input i {
-  padding: .8em .5em 0 0;
 }
 
 /*---------------*/
@@ -307,37 +285,17 @@ nav {
 
 .project {
   display: none;
-  margin-left: -1%;
-}
-
-.project h3 {
-  font-weight: 900;
-}
-
-.project .padded1 div {
-  font-size: .85em;
 }
 
 .project img {
-  -webkit-box-shadow: 10px 10px 5px -4px rgba(89,67,89,0.77);
-  -moz-box-shadow: 10px 10px 5px -4px rgba(89,67,89,0.77);
-  box-shadow: 10px 10px 5px -4px rgba(89,67,89,0.77);
+  -webkit-box-shadow: 7px 7px 5px -3px rgba(89,67,89,0.77);
+  -moz-box-shadow: 7px 7px 5px -3px rgba(89,67,89,0.77);
+  box-shadow: 7px 7px 5px -3px rgba(89,67,89,0.77);
 }
 
 /*-------------*/
 /* Resume Show */
 /*-------------*/
-
-#resume {
-  width: 75%;
-  height: 90%;
-  overflow: scroll;
-}
-
-#resume p {
-  margin: auto;
-  width: 80%;
-}
 
 /*--------*/
 /* Footer */
@@ -390,5 +348,23 @@ i.footer-icons:hover {
 @media screen and (min-width: 80em) {
   body {
     font-size: 70%;
+  }
+  nav {
+    height: 4em;
+    justify-content: center;
+  }
+  #home, #portfolio, #about, #projects, #resume {
+    display: none;
+    margin: 5.2em auto 1em;
+    width: 100%;
+  }
+  #about-me {
+    margin-top: 1em;
+  }
+  #contact-me {
+    margin-right: 0;
+  }
+  #footer {
+    font-size: 90%;
   }
 }
