@@ -275,6 +275,14 @@ nav {
   margin-right: 1em;
 }
 
+#contact-me > div > span {
+  font-size: .7em;
+}
+
+#contact-me-info {
+  margin: 1.5em 0;
+}
+
 #about-me p {
   line-height: 1.2em;
 }
@@ -325,10 +333,8 @@ i.footer-icons:hover {
 /*  Media Queries  */
 /*-----------------*/
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
+/*// Small screens*/
+@media only screen and (max-width: 40em) {
   body {
     font-size: 80%;
   }
@@ -350,18 +356,14 @@ and (max-device-width : 480px) {
   #footer {
     font-size: 80%;
   }
-}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles */
+/*// Medium screens*/
+@media only screen and (min-width: 40.063em) and (max-width: 48em) {
   body {
-    font-size: 95%;
+    font-size: 90%;
   }
   nav {
-    height: 4em;
     justify-content: center;
   }
   #home, #portfolio, #about, #projects, #resume {
@@ -369,53 +371,15 @@ and (max-device-width : 1024px) {
     margin: 5.2em auto 1.5em;
     width: 100%;
   }
-  #about-me {
-    margin-top: 1em;
-  }
   #contact-me {
     margin-right: 0;
   }
   #footer {
     font-size: 90%;
   }
-}
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-}
+/*// Large screens*/
+@media only screen and (min-width: 48em) {
 
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 2),
-only screen and (min-device-pixel-ratio : 2) {
-/* Styles */
-  body {
-    font-size: 80%;
-  }
-  nav {
-    height: 4em;
-    justify-content: center;
-  }
-  #home, #portfolio, #about, #projects, #resume {
-    display: none;
-    margin: 5.2em auto 2em;
-    width: 100%;
-  }
-  #about-me {
-    margin-top: 1em;
-  }
-  #contact-me {
-    margin-right: 0;
-  }
-  #footer {
-    font-size: 80%;
-  }
-}
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
