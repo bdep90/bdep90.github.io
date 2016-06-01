@@ -115,7 +115,7 @@ window.onload = () => {
   let showPortfolio = () => {
     home.style.display = "none";
     portfolio.style.display = "inline-flex";
-    about.style.display = "none";
+    about.style.display = "block";
     allProjects.style.display = "none";
     resume.style.display = "none";
     document.body.style.background = "url('images/diagonal.png') repeat center center fixed";
@@ -123,7 +123,7 @@ window.onload = () => {
 
   let showAbout = () => {
     home.style.display = "none";
-    portfolio.style.display = "none";
+    portfolio.style.display = "inline-flex";
     about.style.display = "block";
     allProjects.style.display = "none";
     resume.style.display = "none";

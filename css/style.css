@@ -138,7 +138,7 @@ nav, #footer {
   text-transform: uppercase;
 }
 
-#portfolio, #about, #projects, #resume {
+#about, #projects, #resume {
   display: none;
   margin: 4em auto;
   width: 90%;
@@ -195,6 +195,12 @@ nav {
 /* Portfolio Section */
 /*-------------------*/
 
+#portfolio {
+  display: none;
+  margin: 4em auto 0;
+  width: 90%;
+}
+
 .portfolio-project {
   background-image: url('http://www.transparenttextures.com/patterns/asfalt-light.png');
   background-size: auto;
@@ -204,7 +210,6 @@ nav {
   margin: 0 .5em .5em .5em;
   letter-spacing: .07em;
   font-size: .8em;
-  min-height: 90%;
 }
 
 .portfolio-project-titles {
@@ -342,9 +347,14 @@ i.footer-icons:hover {
     height: 4em;
     justify-content: center;
   }
-  #home, #portfolio, #about, #projects, #resume {
+  #home, #about, #projects, #resume {
     display: none;
     margin: 5.2em auto 2em;
+    width: 100%;
+  }
+  #portfolio {
+    display: none;
+    margin: 5.2em auto 0;
     width: 100%;
   }
   #about-me {
@@ -366,9 +376,14 @@ i.footer-icons:hover {
   nav {
     justify-content: center;
   }
-  #home, #portfolio, #about, #projects, #resume {
+  #home, #about, #projects, #resume {
     display: none;
     margin: 5.2em auto 1.5em;
+    width: 100%;
+  }
+  #portfolio {
+    display: none;
+    margin: 5.2em auto 0;
     width: 100%;
   }
   #contact-me {
