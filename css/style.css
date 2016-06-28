@@ -65,6 +65,10 @@ p {
   width: 100%;
 }
 
+.parallax img {
+  display: block;
+}
+
 .modal-content img {
   width: 100%;
   margin-bottom: 6px;
