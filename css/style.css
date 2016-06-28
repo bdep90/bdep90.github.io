@@ -1,0 +1,121 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+nav ul a {
+  color: #444;
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+nav .brand-logo, nav .brand-logo img {
+  height: 100%;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.scrollup {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  text-align: right;
+  margin: 0 1em .7em 0;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.modal-content img {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+#index-banner {
+  background: rgba(240, 248, 255, 0.5);
+}
+
+#about-btns li a {
+  margin: 1px 0 1px 0;
+}
+
+#portfolio img {
+  border: 1px solid #303f9f;
+}
+
+@media only screen and (max-width : 992px) {
+  .scrollup {
+    display: none;
+    pointer-events: none;
+  }
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  #index-banner h1 {
+    margin: .2em;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .scrollup {
+    display: none;
+    pointer-events: none;
+  }
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
