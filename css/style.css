@@ -82,10 +82,11 @@ p {
   margin: 1px 0 1px 0;
 }
 
-#portfolio img {
-  border: 1px solid #303f9f;
+#portfolio a {
+  padding: 0;
 }
 
+/* medium screen */
 @media only screen and (max-width : 992px) {
   .scrollup {
     display: none;
@@ -98,18 +99,16 @@ p {
   #index-banner .section {
     top: 10%;
   }
-  #index-banner h1 {
-    margin: .2em;
-  }
 }
 
+/* mobile */
 @media only screen and (max-width : 600px) {
   .scrollup {
     display: none;
     pointer-events: none;
   }
   #index-banner .section {
-    top: 0;
+    margin-top: 5%;
   }
 }
 
