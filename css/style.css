@@ -74,8 +74,8 @@ p {
   margin-bottom: 6px;
 }
 
-#index-banner {
-  background: rgba(240, 248, 255, 0.5);
+.banners {
+  background: rgba(240, 248, 255, 0.55);
 }
 
 #about-btns li a {
