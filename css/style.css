@@ -42,16 +42,21 @@ p {
   line-height: 2rem;
 }
 
-.button-collapse {
-  color: #26a69a;
+.disabled {
+  display: none;
 }
 
 .scrollup {
   position: fixed;
+  z-index: 1;
   bottom: 5%;
-  right: 5%;
+  right: 1.5%;
   text-align: right;
   margin: 0 1em .7em 0;
+}
+
+.container {
+  width: 80%;
 }
 
 .parallax-container {
@@ -67,6 +72,10 @@ p {
 
 .parallax img {
   display: block;
+}
+
+.button-collapse {
+  color: #26a69a;
 }
 
 .modal-content img {
@@ -88,27 +97,20 @@ p {
 
 /* medium screen */
 @media only screen and (max-width : 992px) {
-  .scrollup {
-    display: none;
-    pointer-events: none;
-  }
   .parallax-container .section {
     position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
+    margin-top: 10%;
   }
 }
 
 /* mobile */
 @media only screen and (max-width : 600px) {
-  .scrollup {
-    display: none;
-    pointer-events: none;
-  }
-  #index-banner .section {
+  .parallax-container .section {
     margin-top: 5%;
+  }
+  .disabled {
+    display: block;
+    margin-top: 20%;
   }
 }
 
