@@ -203,8 +203,9 @@ footer a:active {
   }
 
   .tagline.parallax-container {
-    padding-top: 10rem;
-    padding-bottom: 14rem;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
 
   .rec .section {
