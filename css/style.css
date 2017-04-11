@@ -188,6 +188,10 @@ footer a:active {
 /* medium screen */
 @media only screen and (max-width: 992px) {
 
+  body {
+    font-weight: 400;
+  }
+
 }
 
 /* mobile */
@@ -199,7 +203,12 @@ footer a:active {
   }
 
   .tagline.parallax-container {
-    padding: 3rem auto;
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+  }
+
+  .rec .section {
+    padding: 5rem 1rem;
   }
 
   h2 .fa {
