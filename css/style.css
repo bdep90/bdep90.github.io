@@ -160,7 +160,11 @@ footer a:active {
 
 /* modals */
 .modal .modal-content {
-  padding: 3rem;  
+  padding: 5rem 3rem 3rem;  
+}
+
+.modal .modal-footer .btn-flat {
+  margin-right: 1rem;
 }
 
 .modal-content h4 {
@@ -174,14 +178,14 @@ footer a:active {
 }
 
 .modal-content a {
-  color: #4a148c;
+  color: #000;
   font-weight: 400;
 }
 
 .modal-content a:hover,
 .modal-content a:focus,
 .modal-content a:active {
-  color: #000;
+  color: #4a148c;
 }
 
 
@@ -190,6 +194,10 @@ footer a:active {
 
   body {
     font-weight: 400;
+  }
+
+  .modal-content a {
+    font-weight: 500;
   }
 
 }
@@ -215,6 +223,10 @@ footer a:active {
   h2 .fa {
     display: block;
     padding-bottom: 1rem;
+  }
+
+  .modal .modal-content {
+    padding: 4rem 2rem 2rem;  
   }
 }
 
