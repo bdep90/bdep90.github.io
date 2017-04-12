@@ -87,6 +87,14 @@ span {
   color: #fff;
 }
 
+.subheader {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+
+
 /* tagline */
 .tagline.parallax-container {
   min-height: 40rem;
@@ -98,6 +106,11 @@ span {
   font-size: 1.4rem;
   text-transform: uppercase;
   color: #fff;
+}
+
+/* skills */
+.skills .subheader {
+  padding-top: 2rem;
 }
 
 /* rec */
@@ -113,11 +126,6 @@ span {
 }
 
 /* resources */
-.subheader {
-  font-size: 1.75rem;
-  text-transform: uppercase;
-}
-
 .resources a {
   color: #fff;
 }
@@ -150,14 +158,6 @@ footer a:active {
   color: #fdd835;
 }
 
-.social-links {
-  margin-top: .5rem;
-}
-
-.social-link {
-  margin-right: .5rem;
-}
-
 /* modals */
 .modal .modal-content {
   padding: 5rem 3rem 3rem;  
@@ -188,11 +188,27 @@ footer a:active {
   color: #4a148c;
 }
 
+/* icons */
+.social-links {
+  margin-top: .5rem;
+}
+
+.social-link {
+  margin-right: .5rem;
+}
+
+.mobile-top-icon {
+  padding-top: 3.5rem;
+}
+
+
+
 
 /* medium screen */
 @media only screen and (max-width: 992px) {
 
-  body {
+  body,
+  h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
   }
 
@@ -225,8 +241,12 @@ footer a:active {
     padding-bottom: 1rem;
   }
 
+  footer h5 {
+    padding-top: 2rem;
+  }
+
   .modal .modal-content {
-    padding: 4rem 2rem 2rem;  
+    padding: 2rem;  
   }
 }
 
