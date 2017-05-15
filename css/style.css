@@ -6,248 +6,243 @@
  * Made By MaterializeCSS.com
  */
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  color: #424242;
-  background-color: #9e9e9e;
-  font-size: 1.2rem;
-  letter-spacing: .03rem;
-  font-weight: 300;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	color: #424242;
+	background-color: #9e9e9e;
+	font-size: 1.2rem;
+	letter-spacing: .03rem;
+	font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin: 0;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0;
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 2rem;
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+	font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 p {
-  line-height: 2rem;
+	line-height: 2rem;
 }
 
 ul {
-  margin: 0;
+	margin: 0;
 }
 
 span {
-  display: block;
+	display: block;
 }
 
 .container {
-  width: 75%;
+	width: 75%;
 }
 
 .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
-.scrollup {
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
-  right: 1.5%;
-  text-align: right;
-  margin: 0 1em .7em 0;
+.card .card-content .card-title {
+	line-height: 1.5rem;  
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.scrollup-icon {
+	position: fixed;
+	z-index: 1;
+	bottom: 2rem;
+	right: 1.5%;
+	text-align: right;
+	margin: 0 1em .7em 0;
 }
 
 .brand-logo, .brand-logo img {
-  height: 100%;
+	height: 100%;
 }
 
 .about,
 .resources,
 .skills {
-  color: #fff;
+	color: #fff;
 }
 
 .subheader {
-  display: block;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+	display: block;
+	font-size: 1.5rem;
+	text-transform: uppercase;
 }
-
-
 
 /* tagline */
 .tagline.parallax-container {
-  min-height: 40rem;
-  padding-top: 3rem;
+	min-height: 40rem;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
 }
 
-.card .card-content .card-title {
-  line-height: 1.5rem;  
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  color: #fff;
+.tagline span.unicorn {
+	display: inline;
 }
 
 /* skills */
 .skills .subheader {
-  padding-top: 2rem;
+	padding-top: 2rem;
+}
+
+.skills h2:last-of-type {
+	padding-top: 3rem;
 }
 
 /* rec */
 .rec .section {
-  font-size: 1.15rem;
-  color: #fff;
-  padding: 2rem;
-  background-color: rgba(169, 118, 79, 0.8);
+	font-size: 1.15rem;
+	color: #fff;
+	padding: 2rem;
+	background-color: rgba(169, 118, 79, 0.8);
 }
 
 .rec span {
-  padding-top: 1rem;
+	padding-top: 1rem;
 }
 
 /* resources */
 .resources a {
-  color: #fff;
+	color: #fff;
 }
 
 .resources a:hover,
 .resources a:focus,
 .resources a:active {
-  color: #212121;
+	color: #212121;
 }
 
 /* footer */
 footer.page-footer {
-  padding-top: 4rem;
-  margin-top: 0;
-  color: #fff;
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	margin-top: 0;
+	color: #fff;
 }
 
 footer h5 {
-  padding-top: 1rem;
+	padding-top: 1rem;
 }
 
 footer a {
-  color: #fff;
-  font-size: 1.1rem;
+	color: #fff;
+	font-size: 1.1rem;
 }
 
 footer a:hover,
 footer a:focus,
 footer a:active {
-  color: #fdd835;
+	color: #fdd835;
 }
 
 /* modals */
 .modal .modal-content {
-  padding: 5rem 3rem 3rem;  
+	padding: 5rem 3rem 3rem;  
 }
 
 .modal .modal-footer .btn-flat {
-  margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 .modal-content h4 {
-  font-weight: 400;
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .modal-content span {
-  display: block;
-  padding-top: 1rem;
+	display: block;
+	padding-top: 1rem;
 }
 
 .modal-content a {
-  color: #000;
-  font-weight: 400;
+	color: #4a148c;
 }
 
 .modal-content a:hover,
 .modal-content a:focus,
 .modal-content a:active {
-  color: #4a148c;
+	color: #000;
+	text-decoration: underline;
 }
 
 /* icons */
 .social-links {
-  margin-top: .5rem;
+	margin-top: .5rem;
 }
 
 .social-link {
-  margin-right: .5rem;
+	margin-right: .5rem;
 }
 
 .mobile-top-icon {
-  padding-top: 3.5rem;
+	padding-top: 3.5rem;
 }
-
 
 
 
 /* medium screen */
 @media only screen and (max-width: 992px) {
 
-  body,
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-  }
-
-  .modal-content a {
-    font-weight: 500;
-  }
-
 }
 
 /* mobile */
 @media only screen and (max-width: 600px) {
 
-  .section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
+	.section {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
 
-  .tagline.parallax-container {
-    height: auto;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-  }
+	.tagline.parallax-container {
+		height: auto;
+		padding-top: 5rem;
+		padding-bottom: 3rem;
+	}
 
-  .rec .section {
-    padding: 5rem 1rem;
-  }
+	.rec .section {
+		padding: 5rem 1rem;
+	}
 
-  h2 .fa {
-    display: block;
-    padding-bottom: 1rem;
-  }
+	h2 .fa {
+		display: block;
+		padding-bottom: 1rem;
+	}
 
-  footer h5 {
-    padding-top: 2rem;
-  }
+	footer h5 {
+		padding-top: 2rem;
+	}
 
-  .modal .modal-content {
-    padding: 2rem;  
-  }
+	.modal .modal-content {
+		padding: 2rem;  
+	}
 }
-
-
