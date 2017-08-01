@@ -109,16 +109,32 @@ span {
 
 /* tagline */
 .tagline.parallax-container {
-	min-height: 40rem;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	height:100vh;
 }
 
 .tagline span.unicorn {
 	display: inline;
 }
 
+.tagline .down-arrow {
+	bottom: 0;
+}
+
+.tagline .down-arrow a {
+	color: #424242;
+	padding-top: 3rem;
+}
+
+.tagline .down-arrow a:hover,
+.tagline .down-arrow a:focus {
+	color: #fff;
+}
+
 /* skills & about */
+.skills {
+	height: 100vh;
+}
+
 .skills p,
 .about p {
 	margin-top: 0;
@@ -242,6 +258,10 @@ footer a:active {
 		height: auto;
 		padding-top: 5rem;
 		padding-bottom: 3rem;
+	}
+
+	.skills {
+		height: auto;
 	}
 
 	.projects-col {

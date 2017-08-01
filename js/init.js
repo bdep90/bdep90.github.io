@@ -5,6 +5,17 @@
 
 		$('.modal-trigger').leanModal();
 
+		// function showHideTopButton() {
+		// 	var windowHeight = $(window).height();
+		// 	var taglineHeight = $("#tagline").height();
+		// 	if (taglineHeight == windowHeight) {
+		// 		$(".scrollup-icon").hide();
+		// 	} else {
+		// 		$(".scrollup-icon").show();
+		// 	};
+		// };
+		// showHideTopButton();     
+
 		// smooth scrolling - nav links
 		$('nav a').on('click', function(event) {
 			if (this.hash !== "") { // Make sure this.hash has a value before overriding default behavior
@@ -18,7 +29,8 @@
 			}
 		});
 
-		$("a[href='#top']").click(function() {
+		$("a[href='#top']").click(function(e) {
+			e.preventDefault();
 			$("html, body").animate({ scrollTop: 0 }, "slow");
 			return false;
 		});
