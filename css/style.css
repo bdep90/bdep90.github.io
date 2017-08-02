@@ -269,6 +269,10 @@ footer a:active {
 		padding-top: 5rem;
 		padding-bottom: 3rem;
 	}
+	
+	.tagline .banner-image {
+		margin-bottom: 2rem;
+	}
 
 	.skills {
 		height: auto;
