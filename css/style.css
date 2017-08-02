@@ -81,13 +81,23 @@ span {
 	color: #fff;
 }
 
-.scrollup-icon {
+.scroll-up {
+	display: none;
 	position: fixed;
 	z-index: 1;
 	bottom: 2rem;
 	right: 1.5%;
 	text-align: right;
 	margin: 0 1em .7em 0;
+}
+.scroll-up a {
+	color: #fff;
+}
+
+.scroll-up a:hover,
+.scroll-up a:focus,
+.scroll-up a:active {
+	color: #fdd835;
 }
 
 .brand-logo, .brand-logo img {
@@ -116,17 +126,17 @@ span {
 	display: inline;
 }
 
-.tagline .down-arrow {
-	bottom: 0;
-}
-
-.tagline .down-arrow a {
+.scroll-down {
+	width: 100%;
+	bottom: 2rem;
+	position: absolute;
+	text-align: center;
 	color: #424242;
-	padding-top: 3rem;
 }
 
-.tagline .down-arrow a:hover,
-.tagline .down-arrow a:focus {
+.scroll-down:hover,
+.scroll-down:focus,
+.scroll-down:active {
 	color: #fff;
 }
 

@@ -3,18 +3,18 @@
 
 		$('.parallax').parallax();
 
-		$('.modal-trigger').leanModal();
+		$('.modal-trigger').leanModal();   
 
-		// function showHideTopButton() {
-		// 	var windowHeight = $(window).height();
-		// 	var taglineHeight = $("#tagline").height();
-		// 	if (taglineHeight == windowHeight) {
-		// 		$(".scrollup-icon").hide();
-		// 	} else {
-		// 		$(".scrollup-icon").show();
-		// 	};
-		// };
-		// showHideTopButton();     
+		// scroll arrow behavior
+		$(window).scroll(function() {   
+			var scroll = $(window).scrollTop();
+
+			if (scroll > 0) {
+				$(".scroll-up").show();
+			} else {
+				$(".scroll-up").hide();
+			};
+		});
 
 		// smooth scrolling - nav links
 		$('nav a').on('click', function(event) {
