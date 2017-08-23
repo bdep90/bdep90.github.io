@@ -9,7 +9,7 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	color: #424242;
+	color: #fff;
 	background-color: #9e9e9e;
 	font-size: 1.3rem;
 	letter-spacing: .05rem;
@@ -48,6 +48,10 @@ h5 {
 	font-size: 1.25rem;
 }
 
+a {
+	color: #fff;
+}
+
 p {
 	line-height: 2rem;
 }
@@ -78,7 +82,6 @@ span {
 	line-height: 1.5rem;  
 	font-size: 1.4rem;
 	text-transform: uppercase;
-	color: #fff;
 }
 
 .scroll-up {
@@ -89,9 +92,6 @@ span {
 	right: 1.5%;
 	text-align: right;
 	margin: 0 1em .7em 0;
-}
-.scroll-up a {
-	color: #fff;
 }
 
 .scroll-up a:hover,
@@ -104,12 +104,6 @@ span {
 	height: 100%;
 }
 
-.about,
-.resources,
-.skills {
-	color: #fff;
-}
-
 .subheader {
 	display: block;
 	font-size: 1.5rem;
@@ -118,6 +112,10 @@ span {
 }
 
 /* tagline */
+.tagline {
+	color: #424242;
+}
+
 .tagline.parallax-container {
 	height:100vh;
 }
@@ -145,6 +143,10 @@ span {
 	height: 100vh;
 }
 
+.projects-col .row .col {
+	padding: 0 0.25rem;
+}
+
 .skills p,
 .about p {
 	margin-top: 0;
@@ -154,7 +156,6 @@ span {
 /* rec */
 .rec .section {
 	font-size: 1.15rem;
-	color: #fff;
 	background-color: rgba(169, 118, 79, 0.8);
 	padding: 3rem;
 	width: 85%;
@@ -166,14 +167,10 @@ span {
 }
 
 /* resources */
-.resources a {
-	color: #fff;
-}
-
 .resources a:hover,
 .resources a:focus,
 .resources a:active {
-	color: #212121;
+	color: #424242;
 }
 
 /* footer */
@@ -181,15 +178,13 @@ footer.page-footer {
 	padding-top: 4rem;
 	padding-bottom: 2rem;
 	margin-top: 0;
-	color: #fff;
 }
 
 footer h5 {
-	padding-top: 1rem;
+	padding-top: 1.5rem;
 }
 
 footer a {
-	color: #fff;
 	font-size: 1.1rem;
 }
 
@@ -201,7 +196,8 @@ footer a:active {
 
 /* modals */
 .modal .modal-content {
-	padding: 3rem 3rem;  
+	padding: 3rem 3rem;
+	color: #424242;  
 }
 
 .modal .modal-footer .btn-flat {
@@ -224,7 +220,7 @@ footer a:active {
 .modal-content a:hover,
 .modal-content a:focus,
 .modal-content a:active {
-	color: #000;
+	color: #424242;
 	text-decoration: underline;
 }
 
@@ -248,9 +244,7 @@ footer a:active {
 
 /* large screens */
 @media only screen and (min-width: 993px) {
-
 }
-
 
 /* medium screen */
 @media only screen and (max-width: 992px) {
