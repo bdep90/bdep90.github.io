@@ -25,13 +25,13 @@ h1 {
 
 h2 {
 	font-size: 24px;
-	margin: 0 0 20px;
+	margin: 0 0 30px;
 }
 
 h3 {
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 30px;
-	margin-: 0 0 34px;
+	margin-bottom: 0 0 34px;
 }
 
 p {
@@ -48,12 +48,16 @@ a, i {
 	color: #000;
 }
 
+i {
+	padding-right: 5px;
+}
+
 span {
 	display: block;
 }
 
 .container {
-	width: 85%;
+	width: 90%;
 }
 
 .section {
@@ -95,15 +99,21 @@ nav .brand-logo, nav .brand-logo img {
 	height: 45px;
 	bottom: 7px;
 }
-nav ul a,
-.sidenav a {
+nav ul a, .sidenav a {
 	font-size: 16px !important;
 	color: #6200ea !important;
 }
-
 nav i { color: #6200ea; }
 
 /* hero */
+.hero {
+	height: 95vh;
+	display: flex;
+	align-items: flex-end;
+}
+.hero .content { padding-top: 8em; }
+.hero p { margin-bottom: 14px; }
+.hero i { color: #f9cf51; }
 
 /* projects */
 
@@ -122,8 +132,14 @@ nav i { color: #6200ea; }
 
 /* medium screen */
 @media only screen and (max-width: 992px) {
+	.hero { height: auto; }
+	.hero .content { padding-top: 3em; }
 }
 
 /* small screen */
 @media only screen and (max-width: 600px) {
+	.hero .banner-img { 
+		height: 18em;	
+		padding: 1em 0; 
+	}
 }
