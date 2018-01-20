@@ -5,6 +5,8 @@
 
 		$('.modal-trigger').leanModal();   
 
+		$('.button-collapse').sideNav();
+
 		// scroll arrow behavior
 		$(window).scroll(function() {   
 			var scroll = $(window).scrollTop();
