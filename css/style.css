@@ -9,34 +9,29 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 400;
 }
 
-h1, h2, h3 {
-	font-weight: 400;
-	margin: 0;
+h1, h3 {
+	font-weight: 500;
 }
 
 h1 {
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 36px;
-	margin-bottom: 20px;
+	margin: 0 0 20px;
 }
 
 h2 {
-	font-family: 'Cabin', sans-serif;
 	font-size: 24px;
-	margin-bottom: 20px;
+	margin: 0 0 20px;
 }
 
 h3 {
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 30px;
-	margin-bottom: 34px;
-}
-
-div {
-	font-family: 'Cabin', sans-serif;
-	font-weight: 400;
+	margin-: 0 0 34px;
 }
 
 p {
@@ -92,6 +87,21 @@ span {
 }
 
 /* nav */
+nav {
+	background: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 0 0 0;
+}
+nav .brand-logo, nav .brand-logo img {
+	height: 45px;
+	bottom: 7px;
+}
+nav ul a,
+.sidenav a {
+	font-size: 16px !important;
+	color: #6200ea !important;
+}
+
+nav i { color: #6200ea; }
 
 /* hero */
 
