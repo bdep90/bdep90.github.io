@@ -9,55 +9,48 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	color: #fff;
-	background-color: #9e9e9e;
-	font-size: 1.3rem;
-	letter-spacing: .05rem;
-	font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
+h1, h2, h3 {
 	font-weight: 400;
 	margin: 0;
 }
 
 h1 {
-	font-size: 3rem;
-	font-weight: 500;
-	margin-bottom: 3rem;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 36px;
+	margin-bottom: 20px;
 }
 
 h2 {
-	font-size: 2rem;
-	text-align: center;
-	margin-top: 2rem;
-	margin-bottom: 3rem;
+	font-family: 'Cabin', sans-serif;
+	font-size: 24px;
+	margin-bottom: 20px;
 }
 
 h3 {
-	font-size: 1.75rem;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 30px;
+	margin-bottom: 34px;
 }
 
-h4 {
-	font-size: 1.5rem;
-}
-
-h5 {
-	font-size: 1.25rem;
-}
-
-a {
-	color: #fff;
+div {
+	font-family: 'Cabin', sans-serif;
+	font-weight: 400;
 }
 
 p {
-	line-height: 2rem;
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0 0 32px;
 }
 
 ul {
 	margin: 0;
+}
+
+a, i {
+	color: #000;
 }
 
 span {
@@ -65,23 +58,11 @@ span {
 }
 
 .container {
-	width: 75%;
+	width: 85%;
 }
 
 .section {
-	padding-top: 5rem;
-	padding-bottom: 5.5rem;
-}
-
-.card {
-	width: 100%;
-	margin-bottom: 0;
-}
-
-.card .card-content .card-title {
-	line-height: 1.5rem;  
-	font-size: 1.4rem;
-	text-transform: uppercase;
+	padding: 5em 0;
 }
 
 .scroll-up {
@@ -100,30 +81,6 @@ span {
 	color: #fdd835;
 }
 
-.brand-logo, .brand-logo img {
-	height: 100%;
-}
-
-.subheader {
-	display: block;
-	font-size: 1.5rem;
-	text-transform: uppercase;
-	margin-bottom: 1rem;
-}
-
-/* tagline */
-.tagline {
-	color: #424242;
-}
-
-.tagline.parallax-container {
-	height:100vh;
-}
-
-.tagline span.unicorn {
-	display: inline;
-}
-
 .scroll-down {
 	color: #424242;
 }
@@ -134,163 +91,29 @@ span {
 	color: #fff;
 }
 
-/* skills & about */
-.skills {
-	height: 100vh;
-}
+/* nav */
 
-.projects-col .row .col {
-	padding: 0 0.25rem;
-}
+/* hero */
 
-.skills p,
-.about p {
-	margin-top: 0;
-	margin-bottom: 3rem;
-}
+/* projects */
 
-/* rec */
-.rec .section {
-	font-size: 1.15rem;
-	background-color: rgba(169, 118, 79, 0.8);
-	padding: 3rem;
-	width: 85%;
-    margin: 0 auto;
-}
+/* about */
 
-.rec span {
-	padding-top: 1rem;
-}
-
-/* resources */
-.resources a:hover,
-.resources a:focus,
-.resources a:active {
-	color: #424242;
-}
+/* testimonials */
 
 /* footer */
-footer.page-footer {
-	padding-top: 4rem;
-	padding-bottom: 2rem;
-	margin-top: 0;
-}
-
-footer h5 {
-	padding-top: 1.5rem;
-}
-
-footer a {
-	font-size: 1.1rem;
-}
-
-footer a:hover,
-footer a:focus,
-footer a:active {
-	color: #fdd835;
-}
-
-/* modals */
-.modal .modal-content {
-	padding: 3rem 3rem;
-	color: #424242;  
-}
-
-.modal .modal-footer .btn-flat {
-	margin-right: 1rem;
-}
-
-.modal-content h4 {
-	margin-bottom: 2rem;
-}
-
-.modal-content span {
-	display: block;
-	padding-top: 1rem;
-}
-
-.modal-content a {
-	color: #4a148c;
-}
-
-.modal-content a:hover,
-.modal-content a:focus,
-.modal-content a:active {
-	color: #424242;
-	text-decoration: underline;
-}
-
-.modal-content .row .col {
-	padding-left: 0;
-}
 
 /* icons */
-.social-links {
-	margin-top: .5rem;
-}
-
-.social-link {
-	margin-right: .5rem;
-}
-
-.mobile-top-icon {
-	padding-top: 3.5rem;
-}
 
 
 /* large screens */
-@media only screen and (min-width: 993px) {
+@media only screen and (max-width: 1200px) {
 }
 
 /* medium screen */
 @media only screen and (max-width: 992px) {
 }
 
-/* mobile */
+/* small screen */
 @media only screen and (max-width: 600px) {
-
-	.section {
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-	}
-
-	.tagline.parallax-container {
-		height: auto;
-		padding-top: 5rem;
-		padding-bottom: 3rem;
-	}
-	
-	.tagline .banner-image {
-		margin-bottom: 2rem;
-	}
-
-	.skills {
-		height: auto;
-	}
-
-	.projects-col {
-		margin-top: 3rem;
-	}
-
-	.rec .section {
-		padding: 2rem;
-		width: 100%;
-	}
-
-	h2 .fa {
-		display: block;
-		padding-bottom: 1rem;
-	}
-
-	footer h5 {
-		padding-top: 2rem;
-	}
-
-	.modal .modal-content {
-		padding: 2rem;  
-	}
-
-	.modal-content .row .col:last-of-type {
-    	margin-top: 1.5rem;
-	}
 }
