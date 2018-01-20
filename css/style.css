@@ -125,10 +125,6 @@ span {
 }
 
 .scroll-down {
-	width: 100%;
-	bottom: 2rem;
-	position: absolute;
-	text-align: center;
 	color: #424242;
 }
 
