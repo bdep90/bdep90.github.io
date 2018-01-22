@@ -14,11 +14,11 @@ body {
 }
 
 h1, h3 {
+	font-family: 'Droid Sans', sans-serif;
 	font-weight: 500;
 }
 
 h1 {
-	font-family: 'Droid Sans', sans-serif;
 	font-size: 36px;
 	margin: 0 0 20px;
 }
@@ -29,7 +29,6 @@ h2 {
 }
 
 h3 {
-	font-family: 'Droid Sans', sans-serif;
 	font-size: 30px;
 	margin-bottom: 0 0 34px;
 }
@@ -60,6 +59,10 @@ span {
 	width: 87%;
 }
 
+.container:not(:first-of-type) {
+	/*border-top: 1px solid rgba(0, 0, 0, 0.08);*/
+}
+
 .section {
 	padding: 3em 0;
 }
@@ -68,8 +71,8 @@ span {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	bottom: 2rem;
-	right: 1.5%;
+	bottom: 3em;
+	right: 1%;
 	text-align: right;
 	margin: 0 1em .7em 0;
 }
@@ -111,6 +114,7 @@ nav i { color: #6200ea; }
 	display: flex;
 	align-items: flex-end;
 }
+.hero .row { margin: 0; }
 .hero .content { padding-top: 8em; }
 .hero p { margin-bottom: 14px; }
 .hero i { color: #f9cf51; }
@@ -125,11 +129,10 @@ nav i { color: #6200ea; }
 }
 .projects .card-content {
 	background-color: #f9cf51;
-	padding: 1em;	
+	padding: 1em 0 1em 1em;	
 }
 .projects .card-content .card-title, 
 .projects a {
-	color: #6200ea;
     font-size: 18px;
     line-height: 1;
     margin-bottom: .5em;
@@ -139,6 +142,11 @@ nav i { color: #6200ea; }
 .projects a:focus {
 	text-decoration: underline;
 }
+.projects .card-reveal .card-title {
+	width: 100%;
+	display: inline-block;
+}
+.projects .card-reveal .material-icons { font-size: 20px; }
 .projects .card-reveal p {
     font-size: 18px;
     line-height: 22px;
@@ -146,36 +154,68 @@ nav i { color: #6200ea; }
 }
 
 /* about */
-
+.about .card-panel {
+	border: 2px solid #c2ee1f;
+}
+.about .card-panel i {
+	padding: 0 0 1rem;
+	color: #ff7d69;
+}
+.about .card-panel p {
+	margin: 0 0 20px;
+	padding: 0 0 5px;
+	border-bottom: 1px solid #ff7d69;
+}
+.about .card-panel span {
+	font-size: 16px;
+	line-height: 24px;
+}
+.about .card-panel a:hover,
+.about .card-panel a:focus,
+.about .card-panel a:active {
+	text-decoration: underline;
+}
 /* testimonials */
 
 /* footer */
 
 /* icons */
 
+/* large+ screens */
+@media only screen and (min-width: 992px) {
+	.projects .section { padding-top: 6em; }
+}
+
 
 /* large screens */
 @media only screen and (max-width: 1200px) {
+	.hero { height: auto !important; }
 	.projects .card .card-image { height: 15em; }
 }
 
 /* medium screen */
 @media only screen and (max-width: 992px) {
-	.hero { height: auto; }
+	.container { width: 80%; }
+	.container:not(.nav-wrapper) { border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+	.hero .container { padding-bottom: 3em; }
+	.hero .row { margin-bottom: 20px; }	
 	.hero .content { padding-top: 3em; }
 	.projects .card .card-image {
 		height: 20em;
 		padding: 3em;
 	}
+	.about .card-panel { padding: 1rem 3rem; }
 
 }
 
 /* small screen */
 @media only screen and (max-width: 600px) {
+	.container { width: 90%; }	
 	.hero .banner-img { 
 		height: 18em;	
 		padding: 1em 0; 
 	}
 	.projects .card .card-image { height: 26em; }
-
+	.about .card-panel { padding: 1rem 4rem; }
+	.about .card-panel span { padding-bottom: 1rem; }
 }
