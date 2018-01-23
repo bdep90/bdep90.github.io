@@ -51,6 +51,12 @@ i {
 	padding-right: 5px;
 }
 
+a:hover i,
+a:focus i,
+a:active i {
+	color: #6200ea;
+}
+
 span {
 	display: block;
 }
@@ -175,7 +181,22 @@ nav i { color: #6200ea; }
 .about .card-panel a:active {
 	text-decoration: underline;
 }
+
 /* testimonials */
+.quotes {
+	background-color: #f9cf51; 
+}
+
+blockquote {
+	margin: 2rem 0;
+	border-left: 2px solid #ff7d69;
+	font-size: 17px;
+}
+
+blockquote span {
+	display: block;
+	margin-top: .5rem;
+}
 
 /* footer */
 
