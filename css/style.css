@@ -179,7 +179,8 @@ nav i { color: #6200ea; }
 
 /* testimonials */
 .quotes {
-	background-color: #f9cf51; 
+	background-color: #f9cf51;
+	color: #000; 
 }
 
 blockquote {
@@ -204,7 +205,7 @@ footer.page-footer .container,
 footer.page-footer p,
 footer.page-footer a {
 	font-size: 16px;
-	color: #fff;
+	color: #000;
 }
 
 footer.page-footer p {
@@ -212,7 +213,7 @@ footer.page-footer p {
 }
 
 footer.page-footer i {
-	color: #fff;
+	color: #000;
 }
 
 /* icons */
