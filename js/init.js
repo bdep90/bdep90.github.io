@@ -13,8 +13,10 @@
 
 			if (scroll > 0) {
 				$(".scroll-up").show();
+				$(".banner-img").fadeOut(3000);;
 			} else {
 				$(".scroll-up").hide();
+				$(".banner-img").fadeIn(3000);;
 			};
 		});
 

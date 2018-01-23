@@ -51,10 +51,15 @@ i {
 	padding-right: 5px;
 }
 
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+}
 a:hover i,
 a:focus i,
 a:active i {
-	color: #6200ea;
+	color: #6200ea !important;
 }
 
 span {
@@ -143,11 +148,6 @@ nav i { color: #6200ea; }
     line-height: 1;
     margin-bottom: .5em;
 }
-.projects a:hover,
-.projects a:active,
-.projects a:focus {
-	text-decoration: underline;
-}
 .projects .card-reveal .card-title {
 	width: 100%;
 	display: inline-block;
@@ -176,11 +176,6 @@ nav i { color: #6200ea; }
 	font-size: 16px;
 	line-height: 24px;
 }
-.about .card-panel a:hover,
-.about .card-panel a:focus,
-.about .card-panel a:active {
-	text-decoration: underline;
-}
 
 /* testimonials */
 .quotes {
@@ -199,6 +194,26 @@ blockquote span {
 }
 
 /* footer */
+footer.page-footer, 
+footer.page-footer .footer-copyright {
+	margin-top: 0;
+	background-color: #ff7d69;
+}
+
+footer.page-footer .container, 
+footer.page-footer p,
+footer.page-footer a {
+	font-size: 16px;
+	color: #fff;
+}
+
+footer.page-footer p {
+	margin: 1rem 0 0;
+}
+
+footer.page-footer i {
+	color: #fff;
+}
 
 /* icons */
 
