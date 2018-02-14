@@ -11,13 +11,13 @@
 		$(window).scroll(function() {   
 			var scroll = $(window).scrollTop();
 
-			if (scroll > 0) {
-				$(".scroll-up").show();
-				$(".banner-img").fadeOut(3000);;
-			} else {
-				$(".scroll-up").hide();
-				$(".banner-img").fadeIn(3000);;
-			};
+			// if (scroll > 0) {
+			// 	$(".scroll-up").show();
+			// 	$(".hero").fadeOut(2000);;
+			// } else {
+			// 	$(".scroll-up").hide();
+			// 	$(".hero").fadeIn(2000);;
+			// };
 		});
 
 		// smooth scrolling - nav links
