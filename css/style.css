@@ -228,7 +228,7 @@ footer.page-footer .footer-copyright { color: #ABECCF; }
 	.hero .banner-img { max-width: 75%; }
 	.projects .card .card-image { height: 26em; }
 	.about .card-panel { padding: 1rem 3rem; }
-	.about .card-panel span { padding-bottom: .25rem; }
+	.about .card-panel span { padding-bottom: .3rem; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -239,5 +239,6 @@ footer.page-footer .footer-copyright { color: #ABECCF; }
 	.hero .content {  padding: 0; }
 	.projects .card .card-image { height: 18em; }
 	.about .card-panel { padding: 1rem; }
-	.quotes .card-panel { padding: 1rem; }
+	.quotes .card-panel { padding: 2rem 1rem; }
+	.page-footer .fa-2x { font-size: 3em; }
 }
