@@ -234,7 +234,10 @@ footer.page-footer .footer-copyright { color: #ABECCF; }
 @media only screen and (max-width: 480px) {
 
 	body { font-size: 15px; }
-	.container { width: 95%; }
-	h1, h2, h3 { font-size: 20px !important; }
+	h1 { font-size: 24px !important; }
+	h2, h3 { font-size: 22px !important; }
+	.hero .content {  padding: 0; }
 	.projects .card .card-image { height: 18em; }
+	.about .card-panel { padding: 1rem; }
+	.quotes .card-panel { padding: 1rem; }
 }
