@@ -118,6 +118,7 @@ nav ul a, .sidenav a {
 }
 .projects .card-content .card-title {
     font-size: 17px;
+    font-weight: 600;
     line-height: 1.3;	
     margin-bottom: .5em;
 }
@@ -141,10 +142,6 @@ nav ul a, .sidenav a {
 	padding: 0 0 5px;
 	border-bottom: 1px solid #31E981;
 }
-.about .card-panel span {
-	/*font-size: 17px;*/
-	/*line-height: 24px;*/
-}
 
 /* testimonials */
 .quotes.section { 
@@ -156,13 +153,9 @@ nav ul a, .sidenav a {
 .quotes .card-panel { 
 	border: 2.5px solid #31E981;
 	padding: 3rem;
-	/*font-size: 16px; */
 	text-align: center;
 }
-.quotes p { 
-	margin: 0 0 1rem;
-	/*font-size: 16px; */
-}
+.quotes p { margin: 0 0 1rem; }
 .quotes i { 
 	color: #31E981;
 	display: block; 
@@ -230,9 +223,18 @@ footer.page-footer .footer-copyright { color: #ABECCF; }
 @media only screen and (max-width: 600px) {
 	
 	.container { width: 90%; }
+	.hero h1 { font-size: 30px; }
 	.hero .connect { margin-top: 2em; }
 	.hero .banner-img { max-width: 75%; }
 	.projects .card .card-image { height: 26em; }
-	.about .card-panel { padding: 1rem 4rem; }
-	.about .card-panel span { padding-bottom: 1rem; }
+	.about .card-panel { padding: 1rem 3rem; }
+	.about .card-panel span { padding-bottom: .25rem; }
+}
+
+@media only screen and (max-width: 480px) {
+
+	body { font-size: 15px; }
+	.container { width: 95%; }
+	h1, h2, h3 { font-size: 20px !important; }
+	.projects .card .card-image { height: 18em; }
 }
