@@ -5,6 +5,12 @@
  *
  * Made By MaterializeCSS.com
  */
+@font-face {
+    font-family: KG;
+    src: url(/css/kg-begin-again/KGBeginAgain.ttf);
+    font-weight: 500;
+}
+
 body {
 	display: flex;
 	min-height: 100vh;
@@ -101,14 +107,19 @@ nav ul a, .sidenav a {
 }
 .hero .row { margin: 0; }
 .hero .content { padding-top: 5em; }
+.hero span { 
+	display: inline-block;
+	font-family: KG;
+	font-size: 32px;	 
+}
 .hero h2 { margin: 0; }
 .hero p { margin: 20px 0 6px; }
 
 /* projects */
 .projects .card .card-image {
 	background: #2C2B3C;
-	padding: 1em;
-	height: 16em;
+	padding: 1em 2em;
+	height: 14em;
 	display: flex;
 	align-items: center;
 }
@@ -197,7 +208,7 @@ footer.page-footer .footer-copyright { color: #ABECCF; }
 	
 	.hero { height: auto !important; }
 	.hero .content { padding-top: 1em; }
-	.projects .card .card-image { height: 15em; }
+	.projects .card .card-image { padding: 1em; }
 }
 
 /* medium screen */
@@ -212,10 +223,6 @@ footer.page-footer .footer-copyright { color: #ABECCF; }
 		max-width: 75%;
 		border: 3px solid #03256C;
 	}
-	.projects .card .card-image {
-		height: 20em;
-		padding: 3em;
-	}
 	.about .card-panel { padding: 1rem 3rem; }
 }
 
@@ -226,7 +233,6 @@ footer.page-footer .footer-copyright { color: #ABECCF; }
 	.hero h1 { font-size: 30px; }
 	.hero .connect { margin-top: 2em; }
 	.hero .banner-img { max-width: 75%; }
-	.projects .card .card-image { height: 26em; }
 	.about .card-panel { padding: 1rem 3rem; }
 	.about .card-panel span { padding-bottom: .3rem; }
 }
