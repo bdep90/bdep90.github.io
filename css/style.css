@@ -125,7 +125,7 @@ nav ul a, .sidenav a {
 }
 .projects .card-content {
 	background-color: #31E981;
-	padding: 1em 0 1em 1em;	
+	padding: 1em .5em 1em 1em;	
 }
 .projects .card-content .card-title {
     font-size: 17px;
@@ -241,8 +241,8 @@ footer.page-footer .footer-copyright { color: #ABECCF; }
 
 	body { font-size: 15px; }
 	h1 { font-size: 24px !important; }
-	h2, h3 { font-size: 22px !important; }
-	.hero .content {  padding: 0; }
+	h2, h3, .hero span { font-size: 22px !important; }
+	.hero .content { padding: 0; }
 	.projects .card .card-image { height: 18em; }
 	.about .card-panel { padding: 1rem; }
 	.quotes .card-panel { padding: 2rem 1rem; }
