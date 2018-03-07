@@ -6,9 +6,9 @@
  * Made By MaterializeCSS.com
  */
 @font-face {
-    font-family: KG;
-    src: url(/css/kg-begin-again/KGBeginAgain.ttf);
-    font-weight: 500;
+	font-family: KG;
+	src: url(/css/kg-begin-again/KGBeginAgain.ttf);
+	font-weight: 500;
 }
 
 body {
@@ -49,8 +49,6 @@ p {	margin: 0 0 32px; }
 ul { margin: 0; }
 
 a, i { color: #03256C; }
-
-i { padding-right: 5px; }
 
 a:hover,
 a:focus,
@@ -110,10 +108,11 @@ nav ul a, .sidenav a {
 .hero span { 
 	display: inline-block;
 	font-family: KG;
-	font-size: 32px;	 
+	font-size: 32px;
 }
 .hero h2 { margin: 0; }
 .hero p { margin: 20px 0 6px; }
+.hero i { padding-right: 5px; }
 
 /* projects */
 .projects .card .card-image {
@@ -123,15 +122,25 @@ nav ul a, .sidenav a {
 	display: flex;
 	align-items: center;
 }
+.projects .btn-floating {
+	width: 30px;
+	height: 30px;
+	line-height: 0;
+	background-color: #03256C;
+}
+.projects .btn-floating i { 
+	color: #31E981;
+	font-size: 1.25em;
+}
 .projects .card-content {
 	background-color: #31E981;
-	padding: 1em .5em .5em 1em;	
+	padding: 1em;
 }
 .projects .card-content .card-title {
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.3;	
-    margin-bottom: .5em;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 0;
 }
 .projects .card-reveal .card-title {
 	width: 100%;
@@ -139,7 +148,7 @@ nav ul a, .sidenav a {
 }
 .projects .card-reveal .material-icons { font-size: 20px; }
 .projects .card-reveal p {
-	margin-bottom: .5em;	
+	margin-bottom: .5em;
 }
 
 /* about */
@@ -193,6 +202,7 @@ footer.page-footer span {
 	font-weight: 600;
 }
 footer.page-footer .footer-copyright { color: #ABECCF; } 
+.mobile-top-icon.hide-on-med-and-up.right-align { margin: 1rem 0 0; }
 
 
 /* large+ screens */
