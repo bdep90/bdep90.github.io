@@ -183,12 +183,10 @@ footer.page-footer .footer-copyright {
 	margin-top: 0;
 	background-color: #ABECCF;
 }
-footer.page-footer .container, 
-footer.page-footer p,
-footer.page-footer a { 
-/*font-size: 16px; */ }
+
 footer.page-footer p { 
-	margin: 1rem 0 0;
+	margin: 1rem 0 0; 
+	color: #03256C;	
 }
 footer.page-footer span { 
 	display: inline-block;
