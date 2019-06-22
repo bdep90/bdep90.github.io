@@ -59,6 +59,13 @@ a:active i {
 	color: #2541B2 !important;
 }
 
+.btn-large:hover,
+.btn-large:active,
+.btn-large:focus {
+	color: #ffffff !important;
+	background-color: #2541B2 !important;
+}
+
 span { display: block; }
 
 .container { width: 87%; }
@@ -182,6 +189,11 @@ nav ul a, .sidenav a {
 .quotes span:first-of-type {
 	margin-top: .5rem;
 	font-weight: 600;
+}
+
+/* consultations */
+.consult.section .btn {
+	background-color:
 }
 
 /* footer */
