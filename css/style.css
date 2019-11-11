@@ -107,6 +107,9 @@ nav ul a, .side-nav a {
 	font-size: 17px !important;
 	color: #2541B2 !important;
 }
+.side-nav {
+	padding-top: 1em;
+}
 
 /* hero */
 .hero {
