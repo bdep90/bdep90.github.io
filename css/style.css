@@ -103,7 +103,7 @@ nav .brand-logo, nav .brand-logo img {
 	height: 45px;
 	bottom: 7px;
 }
-nav ul a, .sidenav a {
+nav ul a, .side-nav a {
 	font-size: 17px !important;
 	color: #2541B2 !important;
 }
