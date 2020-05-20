@@ -77,6 +77,11 @@ a:active i,
 .hero .row,
 .projects .row { margin: 0; }
 
+.heading { 
+	display: block;
+	font-weight: 600; 
+}
+
 .mint { background-color: #ABECCF; }
 .royal { background-color: #03256C; }
 .denim { background-color: #2541B2; }
@@ -84,6 +89,7 @@ a:active i,
 
 .card-panel,
 .card { border: 2px solid #31E981; }
+
 
 .scroll-up {
 	display: none;
@@ -127,7 +133,7 @@ nav ul a, .side-nav a {
 	padding: 9em 0 3em;
 }
 .hero a { display: inline-block; }
-.hero span {
+.name {
 	font-family: KG;
 	font-size: 32px;
 	font-weight: 600;
@@ -137,12 +143,16 @@ nav ul a, .side-nav a {
 
 /* projects */
 .projects .row .col.s12 { min-height: 500px; }
+.projects ul { padding-left: 1.25rem; }
 .projects ul li { list-style-type: initial; }
-.projects a { text-transform: uppercase; }
 .projects a.white-text:hover,
 .projects a.white-text:active,
 .projects a.white-text:focus { color: #33E981 !important; }
-.projects span { font-weight: 600;}
+.projects a.credit { 
+	display: inline-block; 
+	text-decoration: underline;
+}
+.projects span { font-weight: 600; }
 
 /* about */
 .about .card-panel i {
@@ -155,7 +165,7 @@ nav ul a, .side-nav a {
 .quotes i.fa-comment {
 	display: block;
 	color: #31E981;
-	margin-top: 1rem;
+	margin: 1rem 0;
 }
 .quotes .card-title { font-size: 18px; }
 
@@ -164,14 +174,7 @@ footer.page-footer .container { color: #03256C; }
 footer.page-footer, footer.page-footer .footer-copyright { background-color: #ABECCF; }
 footer.page-footer { padding: 3rem 0; }
 footer.page-footer a { display: inline-block; }
-footer.page-footer span.title { 
-	display: block;
-	font-weight: 600; 
-}
-footer.page-footer .footer-copyright { 
-	color: #03256C; 
-	margin-top: 4em;
-}
+footer.page-footer .footer-copyright { margin-top: 4em; }
 
 
 /* large+ screens */
