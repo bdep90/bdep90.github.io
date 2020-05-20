@@ -65,7 +65,7 @@ a:active i,
 .btn-large:hover,
 .btn-large:active,
 .btn-large:focus {
-	color: #ffffff !important;
+	color: #FFFFFF !important;
 	background-color: #2541B2 !important;
 }
 
@@ -131,7 +131,6 @@ nav ul a, .side-nav a {
 	display: flex;
 	align-items: flex-end;
 	background-image: url("/pics/headshot2019.png");
-	background-color: #fff;
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -204,7 +203,6 @@ footer.page-footer .footer-copyright { margin-top: 2em; }
 	.about.section,
 	.consult.section { padding: 3em 0; }
 	.container { width: 80%; }
-	.container.white-container { border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
 	.hero { 
 		background-image: none; 
 		padding: 3em 0 0; 
