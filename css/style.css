@@ -138,10 +138,7 @@ nav .brand-logo, nav .brand-logo img {
 	height: 45px;
 	bottom: 7px;
 }
-nav ul a, .side-nav a {
-	font-size: 17px !important;
-	color: #2541B2 !important;
-}
+nav ul a, .side-nav a { color: #2541B2 !important; }
 .side-nav { padding-top: 1em; }
 
 /* Hero */
@@ -184,10 +181,13 @@ nav ul a, .side-nav a {
 .quotes .card-title { font-size: 18px; }
 
 /* Footer */
+.page-footer { 
+	padding: 2rem 0;
+	background-color: #ABECCF; 	 
+}
 .page-footer .container { color: #03256C; }
-.page-footer, .page-footer .footer-copyright { background-color: #ABECCF; }
-.page-footer { padding: 2rem 0; }
-.page-footer .footer-copyright { margin-top: 2rem; }
+.page-footer span { display: block; }
+.copyright { margin-top: 2rem; }
 
 
 
@@ -214,7 +214,7 @@ nav ul a, .side-nav a {
 		padding: 3em 0 0; 
 		margin-bottom: 0;
 	}
-	.hero .row { margin-bottom: 20px; }
+	.hero .row { margin-bottom: 1.5em; }
 	.hero .banner-img { border: 2px solid #03256C; }
 	.about .card-panel { padding: 1rem 3rem; }
 }
@@ -248,6 +248,5 @@ nav ul a, .side-nav a {
 	.projects .row { height: 400px; }
 	.card-panel, .card .card-content, .about .card-panel { padding: 1rem; }
 	.page-footer { padding: 1rem 0; }
-	.page-footer .footer-copyright { margin-top: 1rem; }
 	.page-footer .fa-2x { font-size: 3em; }
 }
