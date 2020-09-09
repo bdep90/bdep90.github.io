@@ -97,6 +97,8 @@ a.inline { display: inline-block; }
 	background-color: #2541B2 !important;
 }
 
+.center { text-align: center; }
+
 .container { width: 87%; }
 
 .about.section,
@@ -140,6 +142,8 @@ nav .brand-logo, nav .brand-logo img {
 }
 nav ul a, .side-nav a { color: #2541B2 !important; }
 .side-nav { padding-top: 1em; }
+.side-nav li > a { font-size: 20px; }
+
 
 /* Hero */
 .hero {
@@ -179,6 +183,14 @@ nav ul a, .side-nav a { color: #2541B2 !important; }
 	margin: 1rem 0;
 }
 .quotes .card-title { font-size: 18px; }
+
+
+/* Consult */
+.consult.section a.btn-large { 
+	display: block; 
+	margin: 0 auto 1em;		
+	width: 500px;
+}
 
 /* Footer */
 .page-footer { 
@@ -236,6 +248,12 @@ nav ul a, .side-nav a { color: #2541B2 !important; }
 	.hero span { font-size: 30px; }
 	.hero .connect { margin-top: 2em; }
 	.social, .back-to-top { margin-top: 1em; }
+	.consult.section a.btn-large { 
+		width: 100%;
+		height: auto;
+		padding: 20px;
+		line-height: 25px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -248,7 +266,7 @@ nav ul a, .side-nav a { color: #2541B2 !important; }
 	h2 {
 		margin-bottom: 0;
 	}
-	.projects .row { height: 400px; }
+	.projects .row { height: 425px; }
 	.card-panel, .card .card-content, .about .card-panel { padding: 1rem; }
 	.page-footer { padding: 1rem 0; }
 	.page-footer .fa-2x { font-size: 3em; }
