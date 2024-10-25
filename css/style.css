@@ -29,10 +29,6 @@ body {
 	color: #1F1E30;
 }
 
-h1, h2, h3, h4 { font-family: 'Droid Sans', sans-serif; }
-
-h2, h3, h4 { font-weight: 400; }
-
 h1, .h1 {
 	font-size: 55px;
 	line-height: 1.1;
@@ -52,6 +48,8 @@ h4, .h4 {
 	font-size: 31px;
 	line-height: 1.1;
 }
+
+blockquote { border-left: 5px solid #03256C; }
 
 a, i { color: #2541B2; }
 
@@ -75,6 +73,8 @@ a.inline { display: inline-block; }
 	border-radius: 10px;
 	text-transform: capitalize;
 }
+
+.btn-large { margin: 1em 0; }
 
 .btn-large:hover,
 .btn-large:active,
@@ -137,7 +137,10 @@ nav ul a, .side-nav a {
 	background-size: contain;
 	padding: 30vh 0 3em;
 }
-.name { font-family: KG; } 
+.hero .name { 
+	font-family: KG; 
+	display: block;
+} 
 .hero .banner-img { border-radius: 10px; }
 
 /* Footer */
