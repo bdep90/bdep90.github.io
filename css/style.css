@@ -90,6 +90,7 @@ a.inline { display: inline-block; }
 
 .card-panel,
 .card { 
+	background-color: #ABECCF;
 	border: 2px solid #31E981;
 	border-radius: 20px;
 }
