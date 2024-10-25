@@ -71,6 +71,11 @@ a:active i,
 
 a.inline { display: inline-block; }
 
+.btn, .btn-large, .btn-flat {
+	border-radius: 10px;
+	text-transform: capitalize;
+}
+
 .btn-large:hover,
 .btn-large:active,
 .btn-large:focus {
@@ -158,9 +163,9 @@ nav ul a, .side-nav a {
 /* medium screens */
 @media only screen and (max-width: 992px) {
 
-	.quotes.section,
+/*	.quotes.section,
 	.about.section,
-	.consult.section { padding: 3em 0; }
+	.consult.section { padding: 3em 0; }*/
 	.container { width: 80%; }
 	.hero { 
 		background-image: none; 
