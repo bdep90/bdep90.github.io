@@ -135,7 +135,10 @@ nav ul a, .side-nav a {
 .hero .banner-img { border-radius: 10px; }
 
 /* Footer */
-.page-footer { color: #1F1E30 !important; }
+.page-footer { 
+	color: #1F1E30 !important;
+	background-color: #ABECCF; 
+}
 .page-footer span { display: block; }
 
 
