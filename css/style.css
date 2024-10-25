@@ -26,7 +26,7 @@ body {
 	line-height: 1.6;
 	margin: auto;
 	font-weight: 400;
-	color: #2C2B3C;
+	color: #1F1E30;
 }
 
 h1, h2, h3, h4 { font-family: 'Droid Sans', sans-serif; }
@@ -35,30 +35,22 @@ h2, h3, h4 { font-weight: 400; }
 
 h1, .h1 {
 	font-size: 55px;
-	line-height: 1.6;
-	margin: 0;
+	line-height: 1.1;
 }
 
 h2, .h2 {
 	font-size: 45px;
-	line-height: 1.6;
-	margin: 0;
+	line-height: 1.1;
 }
 
 h3, .h3 {
 	font-size: 37px;
-	line-height: 1.6;
-	margin: 0;
+	line-height: 1.1;
 }
 
 h4, .h4 {
 	font-size: 31px;
-	line-height: 1.6;
-	margin: 0;
-}
-
-p, ul, ol, pre, table, blockquote {
-	margin: 0;
+	line-height: 1.1;
 }
 
 a, i { color: #2541B2; }
@@ -116,14 +108,17 @@ a.inline { display: inline-block; }
 
 
 /* Nav */
-nav { box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 0 0 0; }
+/*nav { box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 0 0 0; }*/
 nav .brand-logo, nav .brand-logo img {
 	height: 45px;
 	bottom: 7px;
 }
-nav ul a, .side-nav a { color: #2541B2 !important; }
+nav ul a, .side-nav a { 
+	color: #1F1E30 !important; 
+	font-size: 16px;
+}
 .side-nav { padding-top: 1em; }
-.side-nav li > a { font-size: 20px; }
+.side-nav li > a { font-size: 18px; }
 
 
 /* Hero */
@@ -131,68 +126,17 @@ nav ul a, .side-nav a { color: #2541B2 !important; }
 	display: flex;
 	align-items: flex-end;
 	background-image: url("/pics/headshot2019.png");
-	background-position: right;
+	background-position: 90%;
 	background-repeat: no-repeat;
 	background-size: contain;
-	padding: 9em 0 3em;
+	padding: 30vh 0 3em;
 }
 .name { font-family: KG; } 
-.hero p { font-size: 20px; }
 .hero .banner-img { border-radius: 10px; }
-.hero i { padding-right: 5px; }
-
-/* Projects */
-.projects .row { height: 500px; }
-.projects ul { padding-left: 1.25rem; }
-.projects ul li { list-style-type: initial; }
-.projects a.white-text:hover,
-.projects a.white-text:active,
-.projects a.white-text:focus { color: #33E981 !important; }
-.projects a.credit { text-decoration: underline; }
-.project-logos { margin-bottom: 1rem; }
-.project-logos.small { height: 32px; }
-.project-logos.tall { height: 60px; }
-
-/* About */
-.about h3 { border-bottom: 2px solid #33E981; }
-.about i { color: #31E981; }
-
-/* Reviews */
-.quotes i.fa-comment {
-	display: block;
-	color: #31E981;
-	margin: 1rem 0;
-}
-.quotes .card-title { font-size: 18px; }
-
-
-/* Consult */
-.consult.section h4 {
-	font-size: 20px;
-	margin-bottom: 1.5rem;
-}
-.consult.section span,
-.consult.section .slack {
-	font-weight: 600;
-}
-.consult.section a {
-	margin-bottom: .75rem;
-}
-.consult.section a.btn-large { 
-	display: block; 
-	margin: 0 auto 1em;		
-	width: 500px;
-}
 
 /* Footer */
-.page-footer { 
-	padding: 2rem 0;
-	background-color: #ABECCF; 	 
-}
-.page-footer .container { color: #03256C; }
+.page-footer { color: #1F1E30 !important; }
 .page-footer span { display: block; }
-.copyright { margin-top: 2rem; }
-
 
 
 /******  RESPONSIVE STYLES  ******/
