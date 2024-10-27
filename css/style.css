@@ -158,6 +158,9 @@ nav ul a, .side-nav a {
 .page-footer span { display: block; }
 
 
+/* Projects */
+.projects img { padding: 20px 0; }
+
 /******  RESPONSIVE STYLES  ******/
 /* large+ screens */
 @media only screen and (min-width: 992px) {
