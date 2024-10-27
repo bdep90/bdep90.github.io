@@ -92,6 +92,8 @@ a.inline { display: inline-block; }
 
 .container { width: 85%; }
 
+.section { padding: 2rem 0; }
+
 .mint { background-color: #ABECCF; }
 .alien { background-color: #31E981; }
 .persian { background-color: #2541B2; }
