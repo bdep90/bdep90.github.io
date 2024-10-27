@@ -39,12 +39,12 @@ h2, .h2 {
 	line-height: 1.1;
 }
 
-h3, .h3 {
+/*h3, .h3 {
 	font-size: 37px;
 	line-height: 1.1;
-}
+}*/
 
-h4, .h4 {
+h3, .h3 {
 	font-size: 31px;
 	line-height: 1.1;
 }
@@ -157,9 +157,12 @@ nav ul a, .side-nav a {
 }
 .page-footer span { display: block; }
 
-
 /* Projects */
 .projects img { padding: 20px 0; }
+
+/* Resources */
+.resources a { display: inline; }
+
 
 /******  RESPONSIVE STYLES  ******/
 /* large+ screens */
