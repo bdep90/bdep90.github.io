@@ -56,7 +56,7 @@ blockquote {
 
 ul { padding-left: 20px !important; }
 
-ul li { list-style-type: disc !important; }
+section ul li { list-style-type: disc !important; }
 
 a, i { color: #2541B2; }
 
