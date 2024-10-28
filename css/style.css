@@ -11,12 +11,6 @@
 	font-weight: 500;
 }
 
-html {
-	font-size: 20px;
-	line-height: 23px;
-	scroll-behavior: smooth;
-}
-
 body {
 	display: flex;
 	min-height: 100vh;
@@ -29,8 +23,13 @@ body {
 	color: #1F1E30;
 }
 
+section.section:not(.hero) { 
+	padding: 4rem 0;
+	box-shadow: 0 4px 32px -14px rgba(64, 87, 109, .3), 0 0 0 0; 
+}
+
 h1, .h1 {
-	font-size: 55px;
+	font-size: 54px;
 	line-height: 1.1;
 }
 
@@ -40,12 +39,12 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 31px;
+	font-size: 37px;
 	line-height: 1.1;
 }
 
 h4, .h4 {
-	font-size: 26px;
+	font-size: 31px;
 	line-height: 1.1;
 }
 
@@ -62,19 +61,15 @@ a, i { color: #2541B2; }
 
 a { display: block; }
 
-a:hover,
-a:focus,
-a:active,
-a:hover i,
-a:focus i,
-a:active i,
-.activator:hover,
-.activator:focus,
-.activator:active {
+a:hover, a:focus, a:active,
+a:hover i, a:focus i, a:active i,
+.activator:hover, .activator:focus, .activator:active {
 	color: #03256C !important;
 }
 
 a.inline { display: inline-block; }
+
+.btn, .btn-large, .btn-floating, .btn-large, .btn-flat { font-size: 18px; }
 
 .btn, .btn-large, .btn-flat {
 	border-radius: 10px;
@@ -83,16 +78,12 @@ a.inline { display: inline-block; }
 
 .btn-large { margin: 1em 0; }
 
-.btn-large:hover,
-.btn-large:active,
-.btn-large:focus {
+.btn-large:hover, .btn-large:active, .btn-large:focus {
 	color: #FFFFFF !important;
 	background-color: #03256C !important;
 }
 
 .container { width: 85%; }
-
-.section { padding: 2rem 0; }
 
 .mint { background-color: #ABECCF; }
 .alien { background-color: #31E981; }
@@ -162,21 +153,18 @@ nav ul a, .side-nav a {
 /* large screens */
 @media only screen and (max-width: 1200px) {
 
-	.hero { height: auto !important; }
 }
 
 /* medium screens */
 @media only screen and (max-width: 992px) {
 
-	h1, h2 { font-size: 40px; }
-	h3, h4 { font-size: 30px; }
+	section.section { padding: 2rem 0 !important; }
+	h1, h2 { font-size: 37px; }
+	h3, h4 { font-size: 31px; }
 	.container { width: 80%; }
 	.center-align { text-align: left; }
 	.back-to-top { text-align: center; }
-	.hero { 
-		background-image: none; 
-		padding: 0;	
-	}
+	.hero { background-image: none; }
 	.hero .banner-img { 
 		border: 2px solid #33e981;
 		border-radius: 20px; 
@@ -186,13 +174,12 @@ nav ul a, .side-nav a {
 /* small screens */
 @media only screen and (max-width: 600px) {
 
-	h1 { font-size: 30px; }
-	h2, h3, h4 { font-size: 24px; }
+	h1, h2 { font-size: 31px; }
+	h3, h4 { font-size: 26px; }
 	.container { width: 90%; }
 	.back-to-top { margin-top: 20px; }
 }
 
 @media only screen and (max-width: 480px) {
-
 
 }
