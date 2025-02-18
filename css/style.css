@@ -141,6 +141,16 @@ nav ul a, .side-nav a {
 /* Resources */
 .resources a { display: inline; }
 
+/* S&S */
+.ss {
+	display: flex;
+	align-items: flex-end;
+	background-image: url("/pics/headshot-crochet2025.png");
+	background-position: 5%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
 /* Footer */
 .page-footer { 
 	color: #1F1E30 !important;
