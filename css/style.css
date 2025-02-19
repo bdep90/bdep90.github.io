@@ -79,6 +79,11 @@ a:hover i, a:focus i, a:active i,
 
 a.inline { display: inline-block; }
 
+a.white-text:hover, a.white-text:focus, a.white-text:active {
+	color: #FFFFFF !important;
+	text-decoration: underline;
+}
+
 .btn, .btn-large, .btn-floating, .btn-large, .btn-flat { font-size: 18px; }
 
 .btn, .btn-large, .btn-flat {
@@ -146,9 +151,9 @@ nav ul a, .side-nav a {
 	display: flex;
 	align-items: flex-end;
 	background-image: url("/pics/headshot-crochet2025.png");
-	background-position: 5%;
 	background-repeat: no-repeat;
 	background-size: contain;
+	height: 550px;
 }
 
 /* Footer */
@@ -163,7 +168,12 @@ nav ul a, .side-nav a {
 @media only screen and (min-width: 992px) {  }
 
 /* large screens */
-@media only screen and (max-width: 1200px) {  }
+@media only screen and (max-width: 1200px) { 
+
+	.ss { 
+		height: 445px;
+	}
+}
 
 /* medium screens */
 @media only screen and (max-width: 992px) {
@@ -178,6 +188,10 @@ nav ul a, .side-nav a {
 	.hero .banner-img { 
 		border: 2px solid #33e981;
 		border-radius: 20px; 
+	}
+	.ss { 
+		background-image: none;
+		height: auto;
 	}
 }
 
