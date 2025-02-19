@@ -165,7 +165,17 @@ nav ul a, .side-nav a {
 
 /******  RESPONSIVE STYLES  ******/
 /* large+ screens */
-@media only screen and (min-width: 992px) {  }
+@media only screen and (min-width: 1441px) { 
+
+	.ss { 
+		background-image: none;
+		height: auto;
+	}
+	.ss .row .col.offset-l5 {
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
 /* large screens */
 @media only screen and (max-width: 1200px) { 
