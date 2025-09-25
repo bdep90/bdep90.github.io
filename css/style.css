@@ -58,6 +58,10 @@ h5, .h6 {
 	line-height: 1.1;
 }
 
+h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	text-transform: uppercase;
+}
+
 blockquote { 
 	border-left: 5px solid #03256C; 
 	margin: 30px 0;
@@ -128,20 +132,10 @@ nav ul a, .side-nav a {
 .side-nav li > a { font-size: 18px; }
 
 /* Hero */
-.hero {
-	display: flex;
-	align-items: flex-end;
-	background-image: url("/pics/headshot2019.png");
-	background-position: 90%;
-	background-repeat: no-repeat;
-	background-size: contain;
-	padding: 30vh 0 3em;
-}
-.hero .name { 
+.hero h1 { 
 	font-family: KG; 
 	display: block;
 } 
-.hero .banner-img { border-radius: 10px; }
 
 /* Resources */
 .resources a { display: inline; }
