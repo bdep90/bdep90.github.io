@@ -58,7 +58,7 @@ h5, .h6 {
 	line-height: 1.1;
 }
 
-h3, .h4 {
+.h3, .h4, .h5 {
 	text-transform: uppercase;
 }
 
@@ -78,7 +78,7 @@ a { display: block; }
 a:hover, a:focus, a:active,
 a:hover i, a:focus i, a:active i,
 .activator:hover, .activator:focus, .activator:active {
-	color: #03256C !important;
+	color: #1F1E30 !important;
 }
 
 a.inline { display: inline-block; }
@@ -111,9 +111,8 @@ a.white-text:hover, a.white-text:focus, a.white-text:active {
 .raisin { background-color: #1F1E30; }
 
 .card-panel, .card { 
-	background-color: #ABECCF;
-	border: 2px solid #31E981;
-	border-radius: 20px;
+	border: 1px solid #03256C;
+	border-radius: 40px;
 }
 
 .scroll-up { display: none; }
