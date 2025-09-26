@@ -145,6 +145,9 @@ nav ul a, .side-nav a {
 /* Resources */
 .resources a { display: inline; }
 
+/* Testimonials */
+.testimonials img { width: 15%; }
+
 /* Footer */
 .page-footer { 
 	color: #1F1E30 !important;
