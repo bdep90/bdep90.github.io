@@ -83,8 +83,11 @@ a:hover i, a:focus i, a:active i,
 
 a.inline { display: inline-block; }
 
-a.white-text:hover, a.white-text:focus, a.white-text:active {
+a.white-only, a.white-only:hover, a.white-only:focus, a.white-only:active {
 	color: #FFFFFF !important;
+}
+
+a.link:hover, a.link:focus, a.link:active {
 	text-decoration: underline;
 }
 
@@ -141,16 +144,6 @@ nav ul a, .side-nav a {
 
 /* Resources */
 .resources a { display: inline; }
-
-/* S&S */
-.ss {
-	display: flex;
-	align-items: flex-end;
-	background-image: url("/pics/headshot-crochet2025.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 550px;
-}
 
 /* Footer */
 .page-footer { 
