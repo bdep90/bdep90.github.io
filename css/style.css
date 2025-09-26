@@ -29,7 +29,7 @@ section.section:not(.hero) {
 }
 
 h1, .h1 {
-	font-size: 54px;
+	font-size: 74px;
 	line-height: 1.1;
 }
 
@@ -58,7 +58,7 @@ h5, .h6 {
 	line-height: 1.1;
 }
 
-h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h3, .h4 {
 	text-transform: uppercase;
 }
 
@@ -102,7 +102,7 @@ a.white-text:hover, a.white-text:focus, a.white-text:active {
 	background-color: #03256C !important;
 }
 
-.container { width: 85%; }
+.container { width: 80%; }
 
 .mint { background-color: #ABECCF; }
 .alien { background-color: #31E981; }
@@ -136,6 +136,9 @@ nav ul a, .side-nav a {
 	font-family: KG; 
 	display: block;
 } 
+
+/* Services */
+.services img { width: 20%; }
 
 /* Resources */
 .resources a { display: inline; }
