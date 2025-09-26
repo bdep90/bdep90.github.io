@@ -142,11 +142,15 @@ nav ul a, .side-nav a {
 /* Services */
 .services img { width: 20%; }
 
+/* Testimonials */
+.testimonials img { 
+	width: 15%; 
+	display: inline-block;
+	margin-right: 20px;
+}
+
 /* Resources */
 .resources a { display: inline; }
-
-/* Testimonials */
-.testimonials img { width: 15%; }
 
 /* Footer */
 .page-footer { 
