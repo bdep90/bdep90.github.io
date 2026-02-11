@@ -143,6 +143,12 @@ nav ul a, .side-nav a {
 } 
 .hero .banner-img { border-radius: 10px; }
 
+/* Shop */
+a.shop-tile:hover, a.shop-tile:hover, a.shop-tile:hover { 
+	opacity: .7; 
+	transition: opacity 0.5s ease-in-out;
+}
+
 /* Resources */
 .resources a { display: inline; }
 
