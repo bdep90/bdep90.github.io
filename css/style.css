@@ -124,8 +124,14 @@ nav ul a, .side-nav a {
 	color: #1F1E30 !important; 
 	font-size: 16px;
 }
+nav ul a.persian:hover, nav ul a.persian:active, nav ul a.persian:focus {
+	background-color: #1F1E30 !important;
+	text-decoration: none !important;
+}
 .side-nav { padding-top: 1em; }
 .side-nav li > a { font-size: 18px; }
+
+
 
 /* Hero */
 .hero {
